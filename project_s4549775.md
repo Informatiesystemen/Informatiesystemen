@@ -4,6 +4,8 @@ author: Hendrik Werner s4549775
 date: \today
 fontsize: 12pt
 geometry: margin=5em
+header-includes:
+	- \usepackage[mathscr]{euscript}
 ---
 
 \newcommand{\EE}{\mathcal{E}}
@@ -11,6 +13,8 @@ geometry: margin=5em
 \newcommand{\LL}{\mathcal{L}}
 \newcommand{\OO}{\mathcal{O}}
 \newcommand{\PP}{\mathcal{P}}
+
+\newcommand{\pow}{\mathscr{P}}
 
 # Introduction
 
@@ -30,7 +34,16 @@ $\FF$    fact types
          $\FF$ is a partition of $\PP$
 $\Omega$ instances of $\OO$
 -------- -----------------------------
-: \label{th:sets}
+: Sets \label{th:sets}
+
+------------------------------------ ----------------------------------------------------
+$Base : \PP \rightarrow \OO$         Yield the object type associated with the predicator
+$Fact : \PP \rightarrow \FF$         Yield the fact type containing the predicator
+                                     $Fact(p) = f \leftrightarrow p \in f$
+$Pop : \OO \rightarrow \pow(\Omega)$ Yield the instances of an object type
+                                     $\pow$ denotes the powerset
+------------------------------------ ----------------------------------------------------
+: Functions \label{th:functions}
 
 # Application
 
