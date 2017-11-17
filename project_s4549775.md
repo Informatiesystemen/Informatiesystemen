@@ -76,6 +76,10 @@ Next we start identifying their relationships.
 	…
 * …
 
+With this information we can already draw our first diagram.
+
+![Diagram 1](diagrams/diagram_1.pdf)\ 
+
 # Evaluation
 
 # Extension
