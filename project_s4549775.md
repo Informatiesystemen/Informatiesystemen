@@ -27,6 +27,8 @@ $\Omega$      instances of $\mathcal{O}$
 
 # Application
 
+The subject of our studies will be bol.com, which is the Netherlands leading e-commerce website. They sell an enormous amount of products in a wide range of categories, from books to pet supplies.
+
 # Evaluation
 
 # Extension
