@@ -30,6 +30,7 @@ $\FF$    fact types
          $\FF$ is a partition of $\PP$
 $\Omega$ instances of $\OO$
 -------- -----------------------------
+: \label{th:sets}
 
 # Application
 
