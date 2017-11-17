@@ -6,24 +6,30 @@ fontsize: 12pt
 geometry: margin=5em
 ---
 
+\newcommand{\EE}{\mathcal{E}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\PP}{\mathcal{P}}
+
 # Introduction
 
 In this document we want to apply, evaluate, and try to improve the information model theory. The improvement will be done by extending the theory. We do this with the goal of finding the limits of the current model, by way of applying it to a real world case. It will be evaluated what works well, and what does not, and finally improvements will be proposed.
 
 ## Theory overview
 
-------------- ---------------------------------------------
-$\mathcal{P}$ predicators / roles
-$\mathcal{O}$ object types
-$\mathcal{L}$ label types
-              $\mathcal{L} \subseteq \mathcal{O}$
-$\mathcal{E}$ entity types
-              $\mathcal{E} \subseteq \mathcal{O}$
-$\mathcal{F}$ fact types
-              $\mathcal{F} \subseteq \mathcal{O}$
-              $\mathcal{F}$ is a partition of $\mathcal{P}$
-$\Omega$      instances of $\mathcal{O}$
-------------- ---------------------------------------------
+-------- -----------------------------
+$\PP$    predicators / roles
+$\OO$    object types
+$\LL$    label types
+         $\LL \subseteq \OO$
+$\EE$    entity types
+         $\mathcal{E} \subseteq \OO$
+$\FF$    fact types
+         $\FF \subseteq \OO$
+         $\FF$ is a partition of $\PP$
+$\Omega$ instances of $\OO$
+-------- -----------------------------
 
 # Application
 
