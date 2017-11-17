@@ -49,6 +49,29 @@ $Pop : \OO \rightarrow \pow(\Omega)$ Yield the instances of an object type
 
 The subject of our studies will be bol.com, which is the Netherlands leading e-commerce website. They sell an enormous amount of products in a wide range of categories, from books to pet supplies.
 
+## Week 1
+
+We can begin by identifying members of the sets (see \ref{th:sets}) on bol.com.
+
+* $\EE =$ {customer, product, category, shopping cart, …}
+* $\FF =$ {costs, belongs to, contains, …}
+* $\LL =$ {name, ID, price, color, …}
+
+Next we start identifying their relationships.
+
+* Products
+	* belong to categories
+	* have a color
+	* have an ID
+	* have a name
+	* cost a price
+	* …
+* Shopping carts
+	* contain products
+	* belong to a customer
+	* …
+* …
+
 # Evaluation
 
 # Extension
