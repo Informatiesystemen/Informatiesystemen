@@ -70,6 +70,10 @@ Next we start identifying their relationships.
 	* contain products
 	* belong to a customer
 	* …
+* Customers
+	* own shopping carts
+	* have a name
+	…
 * …
 
 # Evaluation
