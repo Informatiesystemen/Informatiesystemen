@@ -80,6 +80,16 @@ With this information we can already draw our first diagram.
 
 ![Diagram 1](diagrams/diagram_1.pdf)\ 
 
+$\OO = \EE \cup \FF \cup \LL$
+
+$\EE$ = {price, category, product, shopping cart, customer, color, name}
+
+$\FF$ = {{1, 2}, {3, 4}, {5, 6}, {7, 8}, {9, 10}, {11, 12}, {13, 14}}
+
+$\LL$ = {price, color}
+
+$\PP$ = {1, 2, …, 14}
+
 # Evaluation
 
 # Extension
