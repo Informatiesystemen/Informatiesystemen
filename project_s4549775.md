@@ -63,7 +63,7 @@ Next we start identifying their relationships.
 	* belong to categories
 	* have a color
 	* have an ID
-	* is called a name
+	* are called a name
 	* cost a price
 	* …
 * Shopping carts
@@ -72,7 +72,7 @@ Next we start identifying their relationships.
 	* …
 * Customers
 	* own shopping carts
-	* is called a name
+	* are called a name
 	…
 * …
 
