@@ -92,4 +92,10 @@ $\PP$ = {1, 2, …, 14}
 
 # Evaluation
 
+## Week 1
+
+At the basic level the theory is sufficient to model basic objects and their relations. A case that could not be incorporated into the model has not been encountered, yet.
+
+If anything, our model is too permissive, as it allows one person to have multiple names, for example, which is something we would probably want to disallow. This problem will be solved in later weeks with constraints.
+
 # Extension
