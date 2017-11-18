@@ -90,6 +90,16 @@ $\LL$ = {price, color}
 
 $\PP$ = {1, 2, …, 14}
 
+$\begin{aligned}
+	Base(p_1) &= product & Base(p_2) &= name\\
+	Base(p_3) &= product & Base(p_4) &= price\\
+	Base(p_5) &= color & Base(p_6) &= product\\
+	Base(p_7) &= product & Base(p_8) &= shopping\ cart\\
+	Base(p_9) &= shopping\ cart & Base(p_{10}) &= customer\\
+	Base(p_{11}) &= name & Base(p_{12}) &= customer\\
+	Base(p_{13}) &= category & Base(p_{14}) &= product\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
