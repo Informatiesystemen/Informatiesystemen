@@ -137,6 +137,8 @@ $\begin{aligned}
 
 $Elt(product\ group) = product$
 
+There may also be groups of products with an ordering inherent to them. Think of books, movies, … with sequels, for example. The group types are not sufficient to represent this, as there is no ordering to the element types. Therefore sequence types are introduced, which supplement group types with an ordering.
+
 # Evaluation
 
 ## Week 1
