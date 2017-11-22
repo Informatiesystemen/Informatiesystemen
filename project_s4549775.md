@@ -10,9 +10,11 @@ header-includes:
 
 \newcommand{\EE}{\mathcal{E}}
 \newcommand{\FF}{\mathcal{F}}
+\newcommand{\GG}{\mathcal{G}}
 \newcommand{\LL}{\mathcal{L}}
 \newcommand{\OO}{\mathcal{O}}
 \newcommand{\PP}{\mathcal{P}}
+\renewcommand{\SS}{\mathcal{S}}
 
 \newcommand{\pow}{\mathscr{P}}
 
@@ -32,17 +34,22 @@ $\EE$    entity types
 $\FF$    fact types
          $\FF \subseteq \OO$
          $\FF$ is a partition of $\PP$
+$\GG$    group types / power types
+         $\GG \in \OO$
+$\SS$    sequence types
+         $\SS \in \OO$
 $\Omega$ instances of $\OO$
 -------- -----------------------------
 : Sets \label{th:sets}
 
------------------------------------- ----------------------------------------------------
+------------------------------------ ---------------------------------------------------------------
 $Base : \PP \rightarrow \OO$         Yield the object type associated with the predicator
+$Elt : \GG \cup \SS \rightarrow \OO$ Yield the element type associated with a group or sequence type
 $Fact : \PP \rightarrow \FF$         Yield the fact type containing the predicator
                                      $Fact(p) = f \leftrightarrow p \in f$
 $Pop : \OO \rightarrow \pow(\Omega)$ Yield the instances of an object type
                                      $\pow$ denotes the powerset
------------------------------------- ----------------------------------------------------
+------------------------------------ ---------------------------------------------------------------
 : Functions \label{th:functions}
 
 # Application
