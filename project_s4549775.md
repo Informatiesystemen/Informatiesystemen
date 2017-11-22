@@ -53,9 +53,9 @@ The subject of our studies will be bol.com, which is the Netherlands leading e-c
 
 We can begin by identifying members of the sets (see \ref{th:sets}) on bol.com.
 
-* $\EE =$ {customer, product, category, shopping cart, …}
+* $\EE =$ {customer, product, category, shopping cart, name, price, color, …}
 * $\FF =$ {costs, belongs to, contains, called, …}
-* $\LL =$ {name, ID, price, color, …}
+* $\LL =$ {product ID, customer ID, shopping cart ID, …}
 
 Next we start identifying their relationships.
 
@@ -86,7 +86,7 @@ $\EE$ = {price, category, product, shopping cart, customer, color, name}
 
 $\FF$ = {{p_1, p_2}, {p_3, p_4}, {p_5, p_6}, {p_7, p_8}, {p_9, p_10}, {p_11, p_12}, {p_13, p_14}}
 
-$\LL$ = {price, color}
+$\LL$ = {product ID, customer ID, shopping cart ID, category ID}
 
 $\PP$ = {p_1, p_2, …, p_14}
 
