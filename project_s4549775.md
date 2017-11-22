@@ -152,6 +152,12 @@ $\begin{aligned}
 
 There may also be groups of products with an ordering inherent to them. Think of books, movies, … with sequels, for example. The group types are not sufficient to represent this, as there is no ordering to the element types. Therefore sequence types are introduced, which supplement group types with an ordering.
 
+![Diagram 3a](diagrams/diagram_3a.pdf)\ 
+
+In addition to the implicit fact type $\epsilon_{PS}$, there is also an implicit objectification of $\epsilon_{PS}$, as well as the implicit fact type $@_{PS}$ between the objectification of $\epsilon_{PS}$, and index $I$.
+
+![Diagram 3b](diagrams/diagram_3b.pdf)\ 
+
 # Evaluation
 
 ## Week 1
