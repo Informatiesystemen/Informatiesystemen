@@ -119,6 +119,24 @@ Which implicitly contains the fact type $\epsilon_{Product Group}$, or $\epsilon
 
 ![Diagram 2b](diagrams/diagram_2b.pdf)\ 
 
+$\OO = \EE \cup \FF \cup \GG \cup \LL$
+
+$\EE$ = {product}
+
+$\FF = \{\epsilon_{PG}\}, \epsilon_{PG} = \{\epsilon_{PG}^e, \epsilon_{PG}^p\}$
+
+$\GG$ = {product group}
+
+$\LL$ = {product ID}
+
+$\PP = \{\epsilon_{PG}^e, \epsilon_{PG}^p\}$
+
+$\begin{aligned}
+	Base(\epsilon_{PG}^e) &= product & Base(\epsilon_{PG}^p) &= product\ group\\
+\end{aligned}$
+
+$Elt(product\ group) = product$
+
 # Evaluation
 
 ## Week 1
