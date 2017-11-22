@@ -137,6 +137,19 @@ $\begin{aligned}
 
 $Elt(product\ group) = product$
 
+We can populate the model with an example population. The craftsman pack consists of a hammer, and nails.
+
+$Pop(product)$ = {hammer, nails}
+
+$Pop(product\ group)$ = {craftsman pack}
+
+$Pop(\epsilon_{PG}) = \{t_1, t_2\}$
+
+$\begin{aligned}
+	t_1(\epsilon_{PG}^p) &= craftsman\ pack & t_2(\epsilon_{PG}^p) &= craftsman\ pack\\
+	t_1(\epsilon_{PG}^e) &= hammer & t_2(\epsilon_{PG}^e) &= nails\\
+\end{aligned}$
+
 There may also be groups of products with an ordering inherent to them. Think of books, movies, … with sequels, for example. The group types are not sufficient to represent this, as there is no ordering to the element types. Therefore sequence types are introduced, which supplement group types with an ordering.
 
 # Evaluation
