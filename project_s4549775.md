@@ -111,6 +111,14 @@ $\begin{aligned}
 
 bol.com might suggest groups of products to be bought together, like Amazon does. We would like an object type that contains multiple entity types. The order of the contained entity types is not important. Group types fulfill this purpose.
 
+We disregard the other object types we identified for now, and just look at the products. The model of a product grouping using group types could look like this.
+
+![Diagram 2a](diagrams/diagram_2a.pdf)\ 
+
+Which implicitly contains the fact type $\epsilon_{Product Group}$, or $\epsilon_{PG}$ for short.
+
+![Diagram 2b](diagrams/diagram_2b.pdf)\ 
+
 # Evaluation
 
 ## Week 1
