@@ -107,6 +107,10 @@ $\begin{aligned}
 	Base(p_{13}) &= category & Base(p_{14}) &= product\\
 \end{aligned}$
 
+## Week 2
+
+bol.com might suggest groups of products to be bought together, like Amazon does. We would like an object type that contains multiple entity types. The order of the contained entity types is not important. Group types fulfill this purpose.
+
 # Evaluation
 
 ## Week 1
