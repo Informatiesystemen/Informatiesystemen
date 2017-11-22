@@ -84,11 +84,11 @@ $\OO = \EE \cup \FF \cup \LL$
 
 $\EE$ = {price, category, product, shopping cart, customer, color, name}
 
-$\FF$ = {{p_1, p_2}, {p_3, p_4}, {p_5, p_6}, {p_7, p_8}, {p_9, p_10}, {p_11, p_12}, {p_13, p_14}}
+$\FF = \{\{p_1, p_2\}, \{p_3, p_4\}, \{p_5, p_6\}, \{p_7, p_8\}, \{p_9, p_{10}\}, \{p_{11}, p_{12}\}, \{p_{13}, p_{14}\}\}$
 
 $\LL$ = {product ID, customer ID, shopping cart ID, category ID}
 
-$\PP$ = {p_1, p_2, …, p_14}
+$\PP = \{p_1, p_2, …, p_{14}\}$
 
 $\begin{aligned}
 	Base(p_1) &= product & Base(p_2) &= name\\
