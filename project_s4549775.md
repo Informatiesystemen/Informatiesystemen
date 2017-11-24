@@ -177,6 +177,26 @@ $\begin{aligned}
 
 $Elt(product\ sequence) = product$
 
+We can again try to populate the model, to show its viability. We take the Matrix movies as an example, but we pretend the third one was never made.
+
+$Pop(product)$ = {the Matrix, the Matrix reloaded}
+
+$Pop(product\ sequence)$ = {Matrix franchise}
+
+$Pop(\epsilon_{PS}) = \{t_1, t_2\}$
+
+$\begin{aligned}
+	t_1(\epsilon_{PS}^s) &= Matrix\ franchise & t_2(\epsilon_{PS}^s) &= Matrix\ franchise\\
+	t_1(\epsilon_{PS}^e) &= the\ Matrix & t_2(\epsilon_{PS}^e) &= the\ Matrix\ reloaded\\
+\end{aligned}$
+
+$Pop(@_{PS}) = \{t_3, t_4\}$
+
+$\begin{aligned}
+	t_3(@_{PS}^s) &= t_1 & t_4(@_{PS}^s) = t_2\\
+	t_3(@_{PS}^i) &= 1 & t_4(@_{PS}^i) = 2\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
