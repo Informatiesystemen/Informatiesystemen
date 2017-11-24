@@ -109,6 +109,8 @@ $\begin{aligned}
 
 ## Week 2
 
+### Group Types
+
 bol.com might suggest groups of products to be bought together, like Amazon does. We would like an object type that contains multiple entity types. The order of the contained entity types is not important. Group types fulfill this purpose.
 
 We disregard the other object types we identified for now, and just look at the products. The model of a product grouping using group types could look like this.
@@ -149,6 +151,8 @@ $\begin{aligned}
 	t_1(\epsilon_{PG}^p) &= craftsman\ pack & t_2(\epsilon_{PG}^p) &= craftsman\ pack\\
 	t_1(\epsilon_{PG}^e) &= hammer & t_2(\epsilon_{PG}^e) &= nails\\
 \end{aligned}$
+
+### Sequence Types
 
 There may also be groups of products with an ordering inherent to them. Think of books, movies, … with sequels, for example. The group types are not sufficient to represent this, as there is no ordering to the element types. Therefore sequence types are introduced, which supplement group types with an ordering.
 
@@ -201,6 +205,8 @@ $\begin{aligned}
 
 ## Week 1
 
+### The Basics
+
 At the basic level the theory is sufficient to model basic objects and their relations. A case that could not be incorporated into the model has not been encountered, yet.
 
 If anything, our model is too permissive, as it allows one person to have multiple names, for example, which is something we would probably want to disallow. This problem will be solved in later weeks with constraints.
@@ -208,6 +214,8 @@ If anything, our model is too permissive, as it allows one person to have multip
 ## Week 2
 
 With the way product types, and sequence types are modeled, we get a lot of duplication. We were able to represent groups and sequences of objects, but in a very verbose way.
+
+### Group Types
 
 It would be nice if instead of
 
@@ -233,6 +241,8 @@ or even
 craftsman pack $\epsilon_{PG}$ {hammer, nails}
 
 With a group of only two items this does not seem like much of a difference, but for big groups it could significantly reduce duplication.
+
+### Sequence Types
 
 The way indices are bound to the objectification of the implicit fact type $\epsilon$, you can have non total relations. This means that there can exists an $\epsilon_X$ for which there is no corresponding $@_X$. This should not happen, as that is not what sequence types are for. If we do not impose an ordering on the elements of a sequence type, then it does not have any differentiation from group types.
 
