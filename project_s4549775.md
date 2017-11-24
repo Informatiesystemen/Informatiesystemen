@@ -239,3 +239,15 @@ The way indices are bound to the objectification of the implicit fact type $\eps
 We can take care to never end up in such a situation, but it would be even better to forbid this ever happening on the modeling level. Instead of binding the index to the objectification of the fact type $\epsilon_X$, we could use implicit ternary fact types.
 
 # Extension
+
+## Week 2
+
+If we wanted to keep using functions like this
+
+$\begin{aligned}
+	t_1(\epsilon_{PG}^p) &= craftsman\ pack & t_1(\epsilon_{PG}^e) &= \{hammer, nails\}\\
+\end{aligned}$
+
+we would need to change the type from $t : \epsilon \rightarrow \Omega$ to $t : \epsilon \rightarrow \pow(\Omega)$. $Pop$ is the only function whose codomain contains $t_i$s, so we need to take a look at that.
+
+The types $\Omega$ and $\epsilon \rightarrow \pow(\Omega)$ are not unifiable, but neither are $\Omega$ and $\epsilon \rightarrow \Omega$ as used in the original theory. If the original theory can ignore type mismatches, our extension can as well.
