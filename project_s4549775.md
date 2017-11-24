@@ -158,6 +158,25 @@ In addition to the implicit fact type $\epsilon_{PS}$, there is also an implicit
 
 ![Diagram 3b](diagrams/diagram_3b.pdf)\ 
 
+$\OO = \EE \cup \FF \cup \GG \cup \LL$
+
+$\EE$ = {product}
+
+$\FF = \{\epsilon_{PS}, @_{PS}\}, \epsilon_{PS} = \{\epsilon_{PS}^s, \epsilon_{PS}^e\}, @_{PS} = \{@_{PS}^s, @_{PS}^i\}$
+
+$\GG$ = {product sequence}
+
+$\LL$ = {product ID, I}
+
+$\PP = \{\epsilon_{PS}^s, \epsilon_{PS}^e, @_{PS}^s, @_{PS}^i\}$
+
+$\begin{aligned}
+	Base(\epsilon_{PS}^s) &= product\ sequence & Base(\epsilon_{PS}^e) &= product\\
+	Base(@_{PS}^s) &= product\ sequence & Base(@_{PS}^i) &= index\\
+\end{aligned}$
+
+$Elt(product\ sequence) = product$
+
 # Evaluation
 
 ## Week 1
