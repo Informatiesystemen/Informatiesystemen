@@ -224,6 +224,12 @@ $\begin{aligned}
 
 or
 
+craftsman pack $\epsilon_{PG}$ hammer
+
+craftsman pack $\epsilon_{PG}$ nails
+
+or even
+
 craftsman pack $\epsilon_{PG}$ {hammer, nails}
 
 With a group of only two items this does not seem like much of a difference, but for big groups it could significantly reduce duplication.
