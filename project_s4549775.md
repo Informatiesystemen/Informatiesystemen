@@ -266,4 +266,8 @@ The types $\Omega$ and $\epsilon \rightarrow \pow(\Omega)$ are not unifiable, bu
 
 ### Sequence Types
 
+We could represent sequence types with implicit ternary relations.
+
 ![Diagram 4](diagrams/diagram_4.pdf)\ 
+
+This way we ensure that every member of a sequence has an associated index on the model level.
