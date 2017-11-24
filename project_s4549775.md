@@ -252,6 +252,8 @@ We can take care to never end up in such a situation, but it would be even bette
 
 ## Week 2
 
+### Group types
+
 If we wanted to keep using functions like this
 
 $\begin{aligned}
