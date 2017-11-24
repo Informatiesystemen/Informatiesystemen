@@ -270,4 +270,12 @@ We could represent sequence types with implicit ternary relations.
 
 ![Diagram 4](diagrams/diagram_4.pdf)\ 
 
+$\FF = \{\epsilon_B\}, \epsilon_B = \{\epsilon_B^s, \epsilon_B^e, \epsilon_B^i\}$
+
+$\PP = \{\epsilon_B^s, \epsilon_B^e, \epsilon_B^i\}$
+
+$\begin{aligned}
+	Base(\epsilon_B^s) &= B & Base(\epsilon_B^e) &= A & Base(\epsilon_B^i) &= I\\
+\end{aligned}$
+
 This way we ensure that every member of a sequence has an associated index on the model level.
