@@ -228,4 +228,8 @@ craftsman pack $\epsilon_{PG}$ {hammer, nails}
 
 With a group of only two items this does not seem like much of a difference, but for big groups it could significantly reduce duplication.
 
+The way indices are bound to the objectification of the implicit fact type $\epsilon$, you can have non total relations. This means that there can exists an $\epsilon_X$ for which there is no corresponding $@_X$. This should not happen, as that is not what sequence types are for. If we do not impose an ordering on the elements of a sequence type, then it does not have any differentiation from group types.
+
+We can take care to never end up in such a situation, but it would be even better to forbid this ever happening on the modeling level. Instead of binding the index to the objectification of the fact type $\epsilon_X$, we could use implicit ternary fact types.
+
 # Extension
