@@ -205,4 +205,27 @@ At the basic level the theory is sufficient to model basic objects and their rel
 
 If anything, our model is too permissive, as it allows one person to have multiple names, for example, which is something we would probably want to disallow. This problem will be solved in later weeks with constraints.
 
+## Week 2
+
+With the way product types, and sequence types are modeled, we get a lot of duplication. We were able to represent groups and sequences of objects, but in a very verbose way.
+
+It would be nice if instead of
+
+$\begin{aligned}
+	t_1(\epsilon_{PG}^p) &= craftsman\ pack & t_2(\epsilon_{PG}^p) &= craftsman\ pack\\
+	t_1(\epsilon_{PG}^e) &= hammer & t_2(\epsilon_{PG}^e) &= nails\\
+\end{aligned}$
+
+we could do something like
+
+$\begin{aligned}
+	t_1(\epsilon_{PG}^p) &= craftsman\ pack & t_1(\epsilon_{PG}^e) &= \{hammer, nails\}\\
+\end{aligned}$
+
+or
+
+craftsman pack $\epsilon_{PG}$ {hammer, nails}
+
+With a group of only two items this does not seem like much of a difference, but for big groups it could significantly reduce duplication.
+
 # Extension
