@@ -328,6 +328,8 @@ $\begin{aligned}
 
 This extension is also compatible with the earlier constructs.
 
+In conclusion, both of these proposed extensions are compatible with the theory. They do not allow us to specify things we would not before, but they let us represent groups and sequences of object types in a more efficient manner.
+
 ### Sequence Types
 
 We could represent sequence types with implicit ternary relations.
