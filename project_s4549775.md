@@ -264,6 +264,30 @@ we would need to change the type from $t : \epsilon \rightarrow \Omega$ to $t : 
 
 The types $\Omega$ and $\epsilon \rightarrow \pow(\Omega)$ are not unifiable, but neither are $\Omega$ and $\epsilon \rightarrow \Omega$ as used in the original theory. If the original theory can ignore type mismatches, our extension can as well.
 
+Let us check whether this extension still works with normal fact types. For this we take a very simple model:
+
+$\OO = \EE \cup \FF$
+
+$\EE$ = {A}
+
+$\FF$ = {f}, f = {$p_1, p_2$}
+
+$\PP$ = {$p_1, p_2$}
+
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= A\\
+\end{aligned}$
+
+$\begin{aligned}
+	Pop(A) &= \{a_1\} & Pop(f) &= \{t_1\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	t_1(p_1) &= \{a_1\} & t_1(p_2) &= \{a_1\}\\
+\end{aligned}$
+
+Evidently the theory extension does not interfere with earlier constructs. We can still express what was expressible before. We made the theory strictly more powerful.
+
 ### Sequence Types
 
 We could represent sequence types with implicit ternary relations.
