@@ -306,6 +306,28 @@ $Pop(\epsilon_B)$ = {($b_1$, {$a_1, a_2$}), ($b_2$, {$a_2, a_3$})}
 
 $Pop : \OO \rightarrow \Omega \rightarrow \pow(\Omega)$
 
+We again try to populate our simple model, to check whether this extension interferes with normal fact types.
+
+![Diagram 5](diagrams/diagram_5.pdf)\ 
+
+$\OO = \EE \cup \FF$
+
+$\EE$ = {A}
+
+$\FF$ = {f}, f = {$p_1, p_2$}
+
+$\PP$ = {$p_1, p_2$}
+
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= A\\
+\end{aligned}$
+
+$\begin{aligned}
+	Pop(A) &= \{a_1\} & Pop(f) &= \{(a_1, \{a_1\})\}\\
+\end{aligned}$
+
+This extension is also compatible with the earlier constructs.
+
 ### Sequence Types
 
 We could represent sequence types with implicit ternary relations.
