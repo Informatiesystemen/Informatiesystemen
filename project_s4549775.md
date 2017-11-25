@@ -260,7 +260,7 @@ $\begin{aligned}
 	t_1(\epsilon_{PG}^p) &= craftsman\ pack & t_1(\epsilon_{PG}^e) &= \{hammer, nails\}\\
 \end{aligned}$
 
-we would need to change the type from $t : \epsilon \rightarrow \Omega$ to $t : \epsilon \rightarrow \pow(\Omega)$. $Pop$ is the only function whose codomain contains $t_i$s, so we need to take a look at that.
+we would need to change the type from $t : \epsilon \rightarrow \Omega$ to $t : \epsilon \rightarrow \pow(\Omega)$. $Pop$ is the only function that interacts with $t_i$s (in its codomain), so we need to take a look at that.
 
 The types $\Omega$ and $\epsilon \rightarrow \pow(\Omega)$ are not unifiable, but neither are $\Omega$ and $\epsilon \rightarrow \Omega$ as used in the original theory. If the original theory can ignore type mismatches, our extension can as well.
 
