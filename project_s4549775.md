@@ -266,6 +266,8 @@ The types $\Omega$ and $\epsilon \rightarrow \pow(\Omega)$ are not unifiable, bu
 
 Let us check whether this extension still works with normal fact types. For this we take a very simple model:
 
+![Diagram 5](diagrams/diagram_5.pdf)\ 
+
 $\OO = \EE \cup \FF$
 
 $\EE$ = {A}
