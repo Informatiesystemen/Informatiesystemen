@@ -290,6 +290,22 @@ $\begin{aligned}
 
 Evidently the theory extension does not interfere with earlier constructs. We can still express what was expressible before. We made the theory strictly more powerful.
 
+If instead we wanted to use the relations, we could represent them as sets of ordered pairs.
+
+$Pop(\epsilon_{PG}) = \{t_1\}, t_1$ = {(craftsman pack, hammer), (craftsman pack, nails)}
+
+$t_1 : \Omega \rightarrow \pow(\Omega)$
+
+or shorter
+
+$Pop(\epsilon_{PG}) = \{t_1\}, t_1$ = {(craftsman pack, {hammer, nails})}
+
+At this point, we can even go all the way, and put everything in one relation, skipping the intermediary $t_i$s.
+
+$Pop(\epsilon_B)$ = {($b_1$, {$a_1, a_2$}), ($b_2$, {$a_2, a_3$})}
+
+$Pop : \OO \rightarrow \Omega \rightarrow \pow(\Omega)$
+
 ### Sequence Types
 
 We could represent sequence types with implicit ternary relations.
