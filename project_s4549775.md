@@ -364,3 +364,13 @@ $\begin{aligned}
 \end{aligned}$
 
 We can still populate the model with our extension.
+
+Can we combine this extension with the simplified group types extension, that was also proposed? The form $Pop(\epsilon_B) = \{(b_1, \{a_1, a_2\})\}$ we chose to represent group types does not capture the order of the element types. We have two possibilities to resolve this issue. We could either do it like this
+
+$Pop(\epsilon_B) = \{(b_1, a_1, 1), (b_1, a_2, 2)\}$
+
+or, simpler and closer to the group types, like this
+
+$Pop(\epsilon_B) = \{(b_1, (a_1, a_2))\}$
+
+Here we use the ordering inherent to tuples to store the position of element types in the sequence. Similar to the ternary fact type extension, this also guarantees that every element has a position (its position in the n-tuple). Additionally this representation is much shorter that the original theory we started with.
