@@ -352,4 +352,15 @@ $\begin{aligned}
 	Base(\epsilon_B^s) &= B & Base(\epsilon_B^e) &= A & Base(\epsilon_B^i) &= I\\
 \end{aligned}$
 
-This way we ensure that every member of a sequence has an associated index on the model level.
+This way we ensure that every member of a sequence has an associated index on the model level, but can we still populate the model?
+
+$\begin{aligned}
+	Pop(A) &= \{a_1, a_2\} & Pop(B) &= \{b_1\} & Pop(I) &= \{1, 2\} & Pop(\epsilon_B) &= \{t_1, t_2\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	t_1(\epsilon_B^s) &= b_1 & t_1(\epsilon_B^e) &= a_1 & t_1(\epsilon_B^i) &= 1\\
+	t_2(\epsilon_B^s) &= b_1 & t_2(\epsilon_B^e) &= a_2 & t_2(\epsilon_B^i) &= 2\\
+\end{aligned}$
+
+We can still populate the model with our extension.
