@@ -336,9 +336,17 @@ We could represent sequence types with implicit ternary relations.
 
 ![Diagram 4](diagrams/diagram_4.pdf)\ 
 
+$\OO = \EE \cup \FF \cup \LL \cup \SS$
+
+$\EE$ = {A}
+
 $\FF = \{\epsilon_B\}, \epsilon_B = \{\epsilon_B^s, \epsilon_B^e, \epsilon_B^i\}$
 
+$\LL$ = {I}
+
 $\PP = \{\epsilon_B^s, \epsilon_B^e, \epsilon_B^i\}$
+
+$\SS$ = {B}
 
 $\begin{aligned}
 	Base(\epsilon_B^s) &= B & Base(\epsilon_B^e) &= A & Base(\epsilon_B^i) &= I\\
