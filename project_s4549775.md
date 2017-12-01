@@ -12,6 +12,7 @@ header-includes:
 \newcommand{\EE}{\mathcal{E}}
 \newcommand{\FF}{\mathcal{F}}
 \newcommand{\GG}{\mathcal{G}}
+\newcommand{\II}{\mathcal{I}}
 \newcommand{\LL}{\mathcal{L}}
 \newcommand{\OO}{\mathcal{O}}
 \newcommand{\PP}{\mathcal{P}}
@@ -25,24 +26,27 @@ In this document we want to apply, evaluate, and try to improve the information 
 
 ## Theory overview
 
--------- -----------------------------
-$\PP$    predicators / roles
-$\OO$    object types
-$\CC$    schema types
-         $\CC \subseteq \OO$
-$\LL$    label types
-         $\LL \subseteq \OO$
-$\EE$    entity types
-         $\mathcal{E} \subseteq \OO$
-$\FF$    fact types
-         $\FF \subseteq \OO$
-         $\FF$ is a partition of $\PP$
-$\GG$    group types / power types
-         $\GG \in \OO$
-$\SS$    sequence types
-         $\SS \in \OO$
-$\Omega$ instances of $\OO$
--------- -----------------------------
+--------- ---------------------------------------
+$\PP$     predicators / roles
+$\OO$     object types
+$\Omega$  instances of $\OO$
+$\CC$     schema types
+          $\CC \subseteq \OO$
+$\EE$     entity types
+          $\mathcal{E} \subseteq \OO$
+$\FF$     fact types
+          $\FF \subseteq \OO$
+          $\FF$ is a partition of $\PP$
+$\GG$     group types / power types
+          $\GG \in \OO$
+$\LL$     label types
+          $\LL \subseteq \OO$
+$\SS$     sequence types
+          $\SS \in \OO$
+$\II$     model
+          $\II = \{\CC, \EE, \FF, \GG, \LL, …\}$
+$POP_\II$ all possible populations of model $\II$
+--------- ---------------------------------------
 : Sets \label{th:sets}
 
 ------------------------------------ ---------------------------------------------------------------
