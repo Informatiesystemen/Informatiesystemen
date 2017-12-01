@@ -8,6 +8,7 @@ header-includes:
 	- \usepackage[mathscr]{euscript}
 ---
 
+\newcommand{\CC}{\mathcal{C}}
 \newcommand{\EE}{\mathcal{E}}
 \newcommand{\FF}{\mathcal{F}}
 \newcommand{\GG}{\mathcal{G}}
@@ -27,6 +28,8 @@ In this document we want to apply, evaluate, and try to improve the information 
 -------- -----------------------------
 $\PP$    predicators / roles
 $\OO$    object types
+$\CC$    schema types
+         $\CC \subseteq \OO$
 $\LL$    label types
          $\LL \subseteq \OO$
 $\EE$    entity types
@@ -49,8 +52,10 @@ $Fact : \PP \rightarrow \FF$         Yield the fact type containing the predicat
                                      $Fact(p) = f \leftrightarrow p \in f$
 $Pop : \OO \rightarrow \pow(\Omega)$ Yield the instances of an object type
                                      $\pow$ denotes the powerset
+$\prec \subseteq \CC \times \OO$     decomposition of schema types
+                                     $X \prec A \leftrightarrow X$ contains $A$
 ------------------------------------ ---------------------------------------------------------------
-: Functions \label{th:functions}
+: Functions and Relations \label{th:functions}
 
 # Application
 
