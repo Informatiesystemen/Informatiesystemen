@@ -381,11 +381,11 @@ Here we use the ordering inherent to tuples to store the position of element typ
 
 In this representation it is more difficult to define the type of $Pop$, let us have a try:
 
-$Pop : \OO \rightarrow \Omega \rightarrow \Omega \cup (\Omega \times \Omega) \cup (\Omega \times \Omega \times \Omega) \cup …$
+$Pop : \OO \rightarrow \Omega \rightarrow \varnothing \cup \Omega \cup (\Omega \times \Omega) \cup (\Omega \times \Omega \times \Omega) \cup …$
 
 Basically we need some equivalent of power sets, but for tuples. As far as I am aware such a tool does not exist, but we can define it:
 
-$\pow_\times(A) := A \cup (A \times A) \cup (A \times A \times A) \cup …$
+$\pow_\times(A) := \varnothing \cup A \cup (A \times A) \cup (A \times A \times A) \cup …$
 
 With this new device, we can finally define the type of the proposed $Pop$ as
 
