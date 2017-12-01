@@ -222,6 +222,8 @@ An example of this could look as follows:
 
 ![Diagram 6](diagrams/diagram_6.pdf)\ 
 
+$s_1$ is the input of reaction $r_1$, which turns it into $s_2$.
+
 # Evaluation
 
 ## Week 1
