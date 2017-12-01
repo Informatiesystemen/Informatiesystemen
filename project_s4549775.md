@@ -262,7 +262,7 @@ $\begin{aligned}
 
 we would need to change the type from $t : \epsilon \rightarrow \Omega$ to $t : \epsilon \rightarrow \pow(\Omega)$. $Pop$ is the only function that interacts with $t_i$s (in its codomain), so we need to take a look at that.
 
-The types $\Omega$ and $\epsilon \rightarrow \pow(\Omega)$ are not unifiable, but neither are $\Omega$ and $\epsilon \rightarrow \Omega$ as used in the original theory. If the original theory can ignore type mismatches, our extension can as well.
+In chapter 2.2.3 of the dictate containing the theory the universe of instances is formally defined. This definition includes mappings. Functions are just specialized mapping, so the type of $Pop$ holds.
 
 Let us check whether this extension still works with normal fact types. For this we take a very simple model:
 
