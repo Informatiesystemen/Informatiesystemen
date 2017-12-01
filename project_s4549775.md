@@ -210,6 +210,14 @@ $\begin{aligned}
 	t_3(@_{PS}^i) &= 1 & t_4(@_{PS}^i) = 2\\
 \end{aligned}$
 
+## Week 3
+
+### Schema Types
+
+We came across objectifications of fact types before, but what about objectifying whole submodels? As I cannot identify a use case for this on bol.com, we will do an abstract example.
+
+Let there be chemical reactions R, and substances S. A chemical reaction has substances as inputs, and substances as outputs. Substances are either inputs to reactions, outputs of reactions, or both. Substances and reaction may be decomposed. A substance may consist of several other substances. Reactions might produce intermediary substances, that take part in subreactions, and so on.
+
 # Evaluation
 
 ## Week 1
