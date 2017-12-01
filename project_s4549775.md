@@ -264,7 +264,7 @@ we would need to change the type from $t : \epsilon \rightarrow \Omega$ to $t : 
 
 In chapter 2.2.3 of the dictate containing the theory the universe of instances is formally defined. This definition includes mappings. Functions are just specialized mapping, so the type of $Pop$ holds.
 
-I think the universe of instances can be more easily defined line this: $\sigma \in \Omega \leftrightarrow \exists \phi \in \OO: \sigma \in Pop(\phi)$. That is a pretty broad definition, but it should be correct, and has the advantage that we do not need to worry about it anymore. By definition, if an element of a set returned by $Pop$, it is an element of $\Omega$.
+I think the universe of instances can be more easily defined like this: $\sigma \in \Omega \leftrightarrow \exists \phi \in \OO: \sigma \in Pop(\phi)$. That is a pretty broad definition, but it should be correct, and has the advantage that we do not need to worry about it anymore. By definition, if an element of a set returned by $Pop$, it is an element of $\Omega$.
 
 Let us check whether this extension still works with normal fact types. For this we take a very simple model:
 
