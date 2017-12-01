@@ -228,6 +228,10 @@ Substance $s_1$ decomposes into $s_3$, and $s_4$. Reaction $a_1$ decomposes into
 
 $a_2$ consumes $s_3$, and outputs $s_5$. $a_3$ consumes $s_4$, and $s_5$, and outputs $s_2$.
 
+By applying these decompositions we get this diagram:
+
+![Diagram 6b](diagrams/diagram_6b.pdf)\ 
+
 # Evaluation
 
 ## Week 1
