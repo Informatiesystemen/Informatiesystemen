@@ -218,6 +218,10 @@ We came across objectifications of fact types before, but what about objectifyin
 
 Let there be chemical reactions R, and substances S. A chemical reaction has substances as inputs, and substances as outputs. Substances are either inputs to reactions, outputs of reactions, or both. Substances and reaction may be decomposed. A substance may consist of several other substances. Reactions might produce intermediary substances, that take part in subreactions, and so on.
 
+An example of this could look as follows:
+
+![Diagram 6](diagrams/diagram_6.pdf)\ 
+
 # Evaluation
 
 ## Week 1
