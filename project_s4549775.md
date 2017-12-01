@@ -220,7 +220,7 @@ Let there be chemical reactions R, and substances S. A chemical reaction has sub
 
 An example of this could look as follows:
 
-![Diagram 6](diagrams/diagram_6.pdf)\ 
+![Diagram 6a](diagrams/diagram_6a.pdf)\ 
 
 $s_1$ is the input of reaction $r_1$, which turns it into $s_2$.
 
