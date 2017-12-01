@@ -371,6 +371,8 @@ Can we combine this extension with the simplified group types extension, that wa
 
 $Pop(\epsilon_B) = \{(b_1, a_1, 1), (b_1, a_2, 2)\}$
 
+$Pop : \OO \rightarrow \pow(\Omega \times \Omega \times \Omega)$
+
 or, simpler and closer to the group types, like this
 
 $Pop(\epsilon_B) = \{(b_1, (a_1, a_2))\}$
