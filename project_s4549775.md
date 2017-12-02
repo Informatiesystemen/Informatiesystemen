@@ -247,6 +247,10 @@ $\FF$ = {i, o, dr, ds}, i = {$p_1, p_2$}, o = {$p_3, p_4$}, dr = {$p_5, p_6$}, d
 $\PP = \{p_1, p_2, …, p_8\}$
 
 $\begin{aligned}
+	D &\prec R & D &\prec S & D &\prec i & D &\prec o\\
+\end{aligned}$
+
+$\begin{aligned}
 	Base(p_1) &= R & Base(p_2) &= S & Base(p_3) &= R & Base(p_4) &= S\\
 	Base(p_5) &= R & Base(p_6) &= D & Base(p_7) &= D & Base(p_8) &= S\\
 \end{aligned}$
