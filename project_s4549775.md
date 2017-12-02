@@ -236,6 +236,21 @@ Schema types allow us to model these processes. The following model can describe
 
 ![Diagram 7](diagrams/diagram_7.pdf)\ 
 
+$\OO = \CC \cup \EE \cup \FF$
+
+$\CC$ = {D}
+
+$\EE$ = {R, S}
+
+$\FF$ = {i, o, dr, ds}, i = {$p_1, p_2$}, o = {$p_3, p_4$}, dr = {$p_5, p_6$}, ds = {$p_7, p_8$}
+
+$\PP = \{p_1, p_2, …, p_8\}$
+
+$\begin{aligned}
+	Base(p_1) &= R & Base(p_2) &= S & Base(p_3) &= R & Base(p_4) &= S\\
+	Base(p_5) &= R & Base(p_6) &= D & Base(p_7) &= D & Base(p_8) &= S\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
