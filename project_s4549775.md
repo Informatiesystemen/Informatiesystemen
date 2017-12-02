@@ -255,6 +255,26 @@ $\begin{aligned}
 	Base(p_5) &= R & Base(p_6) &= D & Base(p_7) &= D & Base(p_8) &= S\\
 \end{aligned}$
 
+Now we try to populate this model with the process from above.
+
+$Pop(R) = \{r_1, r_2, r_3\}$
+
+$Pop(S) = \{s_1, s_2, s_3, s_4, s_5\}$
+
+$Pop(i) = \{t_1, t_2, t_3\}$
+
+$\begin{aligned}
+	t_1(p_1) &= r_2 & t_2(p_1) &= r_3 & t_3(p_1) &= r_3\\
+	t_1(p_2) &= s_3 & t_2(p_2) &= s_4 & t_3(p_2) &= s_5\\
+\end{aligned}$
+
+$Pop(o) = \{t_4, t_5\}$
+
+$\begin{aligned}
+	t_4(p_3) &= r_2 & t_5(p_3) &= r_3\\
+	t_4(p_4) &= s_5 & t_5(p_4) &= s_2\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
