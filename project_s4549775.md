@@ -232,6 +232,10 @@ By applying these decompositions we get this diagram:
 
 ![Diagram 6b](diagrams/diagram_6b.pdf)\ 
 
+Schema types allow us to model these processes. The following model can describe processes and their decompositions.
+
+![Diagram 7](diagrams/diagram_7.pdf)\ 
+
 # Evaluation
 
 ## Week 1
