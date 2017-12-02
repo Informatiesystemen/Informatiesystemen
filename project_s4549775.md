@@ -224,9 +224,9 @@ An example of this could look as follows:
 
 $s_1$ is the input of reaction $r_1$, which turns it into $s_2$.
 
-Substance $s_1$ decomposes into $s_3$, and $s_4$. Reaction $a_1$ decomposes into subreactions $a_2, a_3$, as well as intermediate substance $s_5$.
+Substance $s_1$ decomposes into $s_3$, and $s_4$. Reaction $r_1$ decomposes into subreactions $r_2, r_3$, as well as intermediate substance $s_5$.
 
-$a_2$ consumes $s_3$, and outputs $s_5$. $a_3$ consumes $s_4$, and $s_5$, and outputs $s_2$.
+$r_2$ consumes $s_3$, and outputs $s_5$. $r_3$ consumes $s_4$, and $s_5$, and outputs $s_2$.
 
 By applying these decompositions we get this diagram:
 
