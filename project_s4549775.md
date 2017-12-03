@@ -386,7 +386,35 @@ $\begin{aligned}
 	Pop_{s_4}(R) &= \varnothing & Pop_{s_4}(S) &= \{s_2\} & Pop_{s_4}(i) &= \varnothing & Pop_{s_4}(o) &= \varnothing \\
 \end{aligned}$
 
+What can be deduced from the model? Lets break the formula down like this: $\forall r, s: p \rightarrow (\phi \leftrightarrow \psi)$, where precondition $p$ is necessary, and $\psi$ is the sufficient condition for $\phi$.
+
+$p = (r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)$
+
+The only $r$ and $s$ meeting the precondition are $r_2$ because $(r_2, Pop_{r_2}) \in Pop(dr)$, $s_3$ because $(s_3, Pop_{s_3}) \in Pop(ds)$, and $s_4$ because $(s_4, Pop_{s_4}) \in Pop(ds)$.
+
+We look at the inputs first. For which of the possible combinations $Pop_{r_2}(R) \times (Pop_{s_3}(S) \cup Pop_{s_4}(S))$ does $(r', s') \in Pop(i)$ hold?
+
+$\begin{aligned}
+	(Pop_{r_2}(R) \times (Pop_{s_3}(S) \cup Pop_{s_4}(S))) \cap Pop(i) &= (\{r_1\} \times \{s_1, s_2\}) \cap Pop(i)\\
+	&= \{(r_1, s_1), (r_1, s_2)\} \cap Pop(i) &= \{(r_1, s_1)\}\\
+\end{aligned}$
+
+$\psi$ holds for $(r_1, s_1)$, so as per $\phi$ we deduced that $(r_2, s_3) \in Pop(i)$. Now we look at the outputs.
+
+For which of the combinations $Pop_{r_2}(R) \times (Pop_{s_3}(S) \cup Pop_{s_4}(S))$ does $(r', s') \in Pop(o)$ hold?
+
+$\begin{aligned}
+	(Pop_{r_2}(R) \times (Pop_{s_3}(S) \cup Pop_{s_4}(S))) \cap Pop(o) &= (\{r_1\} \times \{s_1, s_2\}) \cap Pop(o)\\
+	&= \{(r_1, s_1), (r_1, s_2)\} \cap Pop(o) &= \{(r_1, s_2)\}\\
+\end{aligned}$
+
+$\psi$ holds for $(r_1, s_2)$, so as per $\phi$ we deduced that $(r_2, s_4) \in Pop(o)$.
+
+We successfully demonstrated that even though we did not explicitly put these relations into the knowledge base, they are deducible. Our deductions result in the following diagram.
+
 ![Diagram 8b](diagrams/diagram_8b.pdf)\ 
+
+This is what you would expect, looking at the version we started with.
 
 # Extension
 
