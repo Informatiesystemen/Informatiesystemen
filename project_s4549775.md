@@ -358,9 +358,9 @@ If we take a decomposable $r_x$, and a decomposable $s_y$, then $s_y$ is an inpu
 
 We can try to formalize these deduction rules:
 
-$\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow ((r, s) \in Pop(i) \leftrightarrow (\exists s' \in Pop_s \exists r' \in Pop_r: (r', s') \in Pop(i)))$
+$\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow ((r, s) \in Pop(i) \leftrightarrow (\exists s' \in Pop_s(S) \exists r' \in Pop_r(R): (r', s') \in Pop(i)))$
 
-$\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow ((r, s) \in Pop(o) \leftrightarrow (\exists s' \in Pop_s \exists r' \in Pop_r: (r', s') \in Pop(o)))$
+$\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow ((r, s) \in Pop(o) \leftrightarrow (\exists s' \in Pop_s(S) \exists r' \in Pop_r(R): (r', s') \in Pop(o)))$
 
 This is pretty unwieldy, but if you look at an example it becomes clear. Take the following model:
 
