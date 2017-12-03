@@ -362,6 +362,30 @@ $\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow
 
 $\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow ((r, s) \in Pop(o) \leftrightarrow (\exists s' \in Pop_s \exists r' \in Pop_r: (r', s') \in Pop(o)))$
 
+This is pretty unwieldy, but if you look at an example it becomes clear. Take the following model:
+
+![Diagram 8a](diagrams/diagram_8a.pdf)\ 
+
+$Pop(R) = \{r_1, r_2\}$
+
+$Pop(S) = \{s_1, s_2, s_3, s_4\}$
+
+$Pop(i) = \{t_1\}, t_1 = (r_1, s_1)$
+
+$Pop(o) = \{t_2\}, t_1 = (r_1, s_2)$
+
+$Pop(D) = \{Pop_{r_2}, Pop_{s_3}, Pop_{s_4}\}$
+
+$Pop(dr) = \{(r_2, Pop_{r_2})\}$
+
+$Pop(ds) = \{(s_3, Pop_{s_3}), (s_4, Pop_{s_4})\}$
+
+$\begin{aligned}
+	Pop_{r_2}(R) &= r_1 & Pop_{r_2}(S) &= \varnothing & Pop_{r_2}(i) &= \varnothing & Pop_{r_2}(o) &= \varnothing \\
+	Pop_{s_3}(R) &= \varnothing & Pop_{s_3}(S) &= s_1 & Pop_{s_3}(i) &= \varnothing & Pop_{s_3}(o) &= \varnothing \\
+	Pop_{s_4}(R) &= \varnothing & Pop_{s_4}(S) &= s_2 & Pop_{s_4}(i) &= \varnothing & Pop_{s_4}(o) &= \varnothing \\
+\end{aligned}$
+
 # Extension
 
 ## Week 2
