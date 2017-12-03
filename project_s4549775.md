@@ -275,6 +275,32 @@ $\begin{aligned}
 	t_4(p_4) &= s_5 & t_5(p_4) &= s_2\\
 \end{aligned}$
 
+$POP_I$ describes the set of all possible population of the whole model $I$ (see \ref{th:sets}). We call the schema contained in D schema J, so the set of its possible populations is $POP_J$.
+
+$Pop(D) = \{Pop_{r_1}, Pop_{s_1}\}, Pop_{r_1}, Pop_{s_1} \in POP_J$
+
+$Pop(dr) = \{t_6\}$
+
+$\begin{aligned}
+	t_6(p_5) &= r_1 & t_6(p_6) &= Pop_{r_1}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Pop_{r_1}(R) &= \{r_2, r_3\} & Pop_{r_1}(i) &= \{t_3\}\\
+	Pop_{r_1}(S) &= \{s_5\} & Pop_{r_1}(o) &= \{t_4\}\\
+\end{aligned}$
+
+$Pop(ds) = \{t_7\}$
+
+$\begin{aligned}
+	t_7(p_7) &= Pop_{s_1} & t_7(p_8) &= s_1\\
+\end{aligned}$
+
+$\begin{aligned}
+	Pop_{s_1}(R) &= \varnothing & Pop_{s_1}(i) &= \varnothing\\
+	Pop_{s_1}(S) &= \{s_3, s_4\} & Pop_{s_1}(i) &= \varnothing\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
