@@ -356,6 +356,12 @@ As we have shown we can describe the processes and their decomposition using sch
 
 If we take a decomposable $r_x$, and a decomposable $s_y$, then $s_y$ is an input to $r_x$, iff there is an $s_y'$ in the decomposition of $s_y$, that is an input to $r_x'$, which is part of the decomposition of $r_x$. Similarly, $s_y$ is an output of $r_x$, iff there is an $s_y'$ in the decomposition of $s_y$, that is an output of $r_x'$, which is part of the decomposition of $r_x$.
 
+We can try to formalize these deduction rules:
+
+$\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow ((r, s) \in Pop(i) \leftrightarrow (\exists s' \in Pop_s \exists r' \in Pop_r: (r', s') \in Pop(i)))$
+
+$\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow ((r, s) \in Pop(o) \leftrightarrow (\exists s' \in Pop_s \exists r' \in Pop_r: (r', s') \in Pop(o)))$
+
 # Extension
 
 ## Week 2
