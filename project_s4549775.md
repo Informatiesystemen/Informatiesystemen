@@ -386,6 +386,8 @@ $\begin{aligned}
 	Pop_{s_4}(R) &= \varnothing & Pop_{s_4}(S) &= \{s_2\} & Pop_{s_4}(i) &= \varnothing & Pop_{s_4}(o) &= \varnothing \\
 \end{aligned}$
 
+![Diagram 8b](diagrams/diagram_8b.pdf)\ 
+
 # Extension
 
 ## Week 2
