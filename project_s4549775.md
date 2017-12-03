@@ -348,6 +348,14 @@ The way indices are bound to the objectification of the implicit fact type $\eps
 
 We can take care to never end up in such a situation, but it would be even better to forbid this ever happening on the modeling level. Instead of binding the index to the objectification of the fact type $\epsilon_X$, we could use implicit ternary fact types.
 
+## Week 3
+
+### Schema Types
+
+As we have shown we can describe the processes and their decomposition using schema types. You may wonder what happened to the first model, before we applied the decomposition. For example, we do not explicitly list $s_1$ as an input to $r_1$. If you look closely it becomes apparent that the first model is deducible from the second model, including the fact that after applying composition D, $s_1$ is an input to $r_1$.
+
+If we take a decomposable $r_x$, and a decomposable $s_y$, then $s_y$ is an input to $r_x$, iff there is an $s_y'$ in the decomposition of $s_y$, that is an input to $r_x'$, which is part of the decomposition of $r_x$. Similarly, $s_y$ is an output of $r_x$, iff there is an $s_y'$ in the decomposition of $s_y$, that is an output of $r_x'$, which is part of the decomposition of $r_x$.
+
 # Extension
 
 ## Week 2
