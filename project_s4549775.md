@@ -381,9 +381,9 @@ $Pop(dr) = \{(r_2, Pop_{r_2})\}$
 $Pop(ds) = \{(s_3, Pop_{s_3}), (s_4, Pop_{s_4})\}$
 
 $\begin{aligned}
-	Pop_{r_2}(R) &= r_1 & Pop_{r_2}(S) &= \varnothing & Pop_{r_2}(i) &= \varnothing & Pop_{r_2}(o) &= \varnothing \\
-	Pop_{s_3}(R) &= \varnothing & Pop_{s_3}(S) &= s_1 & Pop_{s_3}(i) &= \varnothing & Pop_{s_3}(o) &= \varnothing \\
-	Pop_{s_4}(R) &= \varnothing & Pop_{s_4}(S) &= s_2 & Pop_{s_4}(i) &= \varnothing & Pop_{s_4}(o) &= \varnothing \\
+	Pop_{r_2}(R) &= \{r_1\} & Pop_{r_2}(S) &= \varnothing & Pop_{r_2}(i) &= \varnothing & Pop_{r_2}(o) &= \varnothing \\
+	Pop_{s_3}(R) &= \varnothing & Pop_{s_3}(S) &= \{s_1\} & Pop_{s_3}(i) &= \varnothing & Pop_{s_3}(o) &= \varnothing \\
+	Pop_{s_4}(R) &= \varnothing & Pop_{s_4}(S) &= \{s_2\} & Pop_{s_4}(i) &= \varnothing & Pop_{s_4}(o) &= \varnothing \\
 \end{aligned}$
 
 # Extension
