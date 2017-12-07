@@ -416,6 +416,12 @@ We successfully demonstrated that even though we did not explicitly put these re
 
 This is what you would expect, looking at the version we started with.
 
+Careful observation reveals that $Pop_X(i), Pop_X(o)$ are also deducible from $Pop_X(R), Pop_X(S)$, Pop(i), Pop(o):
+
+$\forall (r, s) \in Pop(i): (r, s) \in Pop_X(i) \leftrightarrow r \in Pop_X(R) \land s \in Pop_X(S)$
+
+$\forall (r, s) \in Pop(o): (r, s) \in Pop_X(o) \leftrightarrow r \in Pop_X(R) \land s \in Pop_X(S)$
+
 # Extension
 
 ## Week 2
