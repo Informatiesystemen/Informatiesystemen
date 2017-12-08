@@ -64,6 +64,8 @@ $Spec \subseteq \EE \times \OO \setminus \LL$ specialization of entity types
                                               $\spec{X}{Y} \leftrightarrow X$ is a specialization of $Y$
 $Gen \subseteq \EE \times \OO \setminus \LL$  generalization of entity types
                                               $\gen{X}{Y} \leftrightarrow X$ is a generalization of $Y$
+$\sim \subseteq \OO \times \OO$               type relatedness
+                                              $X \sim Y \leftrightarrow X$ and $Y$ are type related
 --------------------------------------------- ---------------------------------------------------------------
 : Functions and Relations \label{th:functions}
 
