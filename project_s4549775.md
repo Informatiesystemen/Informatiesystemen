@@ -310,6 +310,12 @@ $\begin{aligned}
 	Pop_{s_1}(S) &= \{s_3, s_4\} & Pop_{s_1}(i) &= \varnothing\\
 \end{aligned}$
 
+## Week 4
+
+### Specialization
+
+![Diagram 9](diagrams/diagram_9.pdf)\ 
+
 # Evaluation
 
 ## Week 1
