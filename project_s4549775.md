@@ -18,7 +18,9 @@ header-includes:
 \newcommand{\PP}{\mathcal{P}}
 \renewcommand{\SS}{\mathcal{S}}
 
+\newcommand{\gen}[2]{#1\ Gen\ #2}
 \newcommand{\pow}{\mathscr{P}}
+\newcommand{\spec}[2]{#1\ Spec\ #2}
 
 # Introduction
 
@@ -49,16 +51,20 @@ $POP_\II$ all possible populations of model $\II$
 --------- ---------------------------------------
 : Sets \label{th:sets}
 
------------------------------------- ---------------------------------------------------------------
-$Base : \PP \rightarrow \OO$         Yield the object type associated with the predicator
-$Elt : \GG \cup \SS \rightarrow \OO$ Yield the element type associated with a group or sequence type
-$Fact : \PP \rightarrow \FF$         Yield the fact type containing the predicator
-                                     $Fact(p) = f \leftrightarrow p \in f$
-$Pop : \OO \rightarrow \pow(\Omega)$ Yield the instances of an object type
-                                     $\pow$ denotes the powerset
-$\prec \subseteq \CC \times \OO$     decomposition of schema types
-                                     $X \prec A \leftrightarrow X$ contains $A$
------------------------------------- ---------------------------------------------------------------
+--------------------------------------------- ---------------------------------------------------------------
+$Base : \PP \rightarrow \OO$                  Yield the object type associated with the predicator
+$Elt : \GG \cup \SS \rightarrow \OO$          Yield the element type associated with a group or sequence type
+$Fact : \PP \rightarrow \FF$                  Yield the fact type containing the predicator
+                                              $Fact(p) = f \leftrightarrow p \in f$
+$Pop : \OO \rightarrow \pow(\Omega)$          Yield the instances of an object type
+                                              $\pow$ denotes the powerset
+$\prec \subseteq \CC \times \OO$              decomposition of schema types
+                                              $X \prec A \leftrightarrow X$ contains $A$
+$Spec \subseteq \EE \times \OO \setminus \LL$ specialization of entity types
+                                              $\spec{X}{Y} \leftrightarrow X$ is a specialization of $Y$
+$Gen \subseteq \EE \times \OO \setminus \LL$  generalization of entity types
+                                              $\gen{X}{Y} \leftrightarrow X$ is a generalization of $Y$
+--------------------------------------------- ---------------------------------------------------------------
 : Functions and Relations \label{th:functions}
 
 # Application
