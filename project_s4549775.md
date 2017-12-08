@@ -66,6 +66,7 @@ $Gen \subseteq \EE \times \OO \setminus \LL$  generalization of entity types
                                               $\gen{X}{Y} \leftrightarrow X$ is a generalization of $Y$
 $\sim \subseteq \OO \times \OO$               type relatedness
                                               $X \sim Y \leftrightarrow X$ and $Y$ are type related
+                                              $X \not \sim Y \rightarrow Pop(X) \cap Pop(Y) = \varnothing$
 --------------------------------------------- ---------------------------------------------------------------
 : Functions and Relations \label{th:functions}
 
