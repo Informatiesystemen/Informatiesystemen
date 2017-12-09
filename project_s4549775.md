@@ -316,6 +316,10 @@ $\begin{aligned}
 
 ![Diagram 9](diagrams/diagram_9.pdf)\ 
 
+### Generalization
+
+![Diagram 10](diagrams/diagram_10.pdf)\ 
+
 # Evaluation
 
 ## Week 1
