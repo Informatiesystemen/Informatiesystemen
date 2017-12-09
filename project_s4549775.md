@@ -336,6 +336,8 @@ $Spec$ = {(Book, Product)}
 
 ### Generalization
 
+Bol.com may keep different records for employees, customers, and resellers, with different attributes, which are not shown here, to keep the model simple. However, all of these entity types have some attributes in common, like an address. We could define a fact type for each of them, linking to the address label type. Alternatively we create a generalization of the entity types, and have a single fact type linking their generalization to the address.
+
 ![Diagram 10](diagrams/diagram_10.pdf)\ 
 
 $\OO = \EE \cup \FF \cup \LL$
