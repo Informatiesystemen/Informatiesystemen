@@ -1,5 +1,10 @@
 % author: Hendrik Werner s4549775
 
+% Examples
+
+% T1
+% ?- related(a, a).
+
 % T1
 related(X, X) :- !.
 
