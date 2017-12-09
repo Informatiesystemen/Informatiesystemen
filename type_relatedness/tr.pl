@@ -15,6 +15,11 @@
 %% related(z, y).
 % ?- related(z, x).
 
+% T4
+%% gen(y, x).
+%% related(x, z).
+% ?- related(y, z).
+
 % T1
 related(X, X) :- !.
 
