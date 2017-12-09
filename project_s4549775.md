@@ -356,6 +356,14 @@ $\begin{aligned}
 
 $Gen$ = {(Person, Customer), (Person, Employee), (Person, Reseller)}
 
+### Type Relatedness
+
+Type relatedness is a concept that tells us whether it is theoretically possible for two populations to overlap. It can be used by databases and compilers, to check whether some statement or query is theoretically possible.
+
+If we have the following statement $Pop(X) = Pop(Y)$, then the compiler can use type relatedness to check, whether the condition can ever be true. We know that $X \not \sim Y \rightarrow Pop(X) \cap Pop(Y) = \varnothing$, so if the types are not related, than the statement can never be true. The compiler could issue a warning in such a case, as writing statements that can never be true was probably not the programmers intention.
+
+There is a set of simple derivation rules that can be followed to derive all type relations. Once we hit a fixed point, meaning that we cannot derive further type relations from the derivation rules, we know that we found all related types.
+
 # Evaluation
 
 ## Week 1
