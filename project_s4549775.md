@@ -320,6 +320,22 @@ $\begin{aligned}
 
 ![Diagram 10](diagrams/diagram_10.pdf)\ 
 
+$\OO = \EE \cup \FF \cup \LL$
+
+$\EE$ = {customer, employee, reseller, person}
+
+$\FF$ = {{$p_1, p_2$}}
+
+$\LL$ = {address, customer ID, employee ID, reseller ID}
+
+$\PP = \{p_1, p_2\}$
+
+$\begin{aligned}
+	Base(p_1) &= Person & Base(p_2) &= Address\\
+\end{aligned}$
+
+$Gen$ = {(Person, Customer), (Person, Employee), (Person, Reseller)}
+
 # Evaluation
 
 ## Week 1
