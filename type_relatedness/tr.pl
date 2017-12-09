@@ -5,6 +5,10 @@
 % T1
 % ?- related(a, a).
 
+% T2
+%% related(a, b).
+% ?- related(b, a).
+
 % T1
 related(X, X) :- !.
 
