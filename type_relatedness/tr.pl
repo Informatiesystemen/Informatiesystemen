@@ -53,3 +53,4 @@ related(X, Y) :- related(Y, X), !.
 
 % default values
 gen(X, Y) :- false.
+pf(X, X).
