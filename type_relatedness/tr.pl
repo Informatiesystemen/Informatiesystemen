@@ -20,6 +20,11 @@
 %% related(x, z).
 % ?- related(y, z).
 
+% T5 & T6
+%% element_type(x, z).
+%% element_type(y, z).
+% ?- related(x, y).
+
 % T1
 related(X, X) :- !.
 
