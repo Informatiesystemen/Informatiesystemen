@@ -10,8 +10,8 @@
 % ?- related(b, a).
 
 % T3
-%% pf(z, y).
-%% pf(x, y).
+%% pater_familias(z, y).
+%% pater_familias(x, y).
 %% related(z, y).
 % ?- related(z, x).
 
@@ -31,8 +31,8 @@ related(X, X) :- !.
 % T3
 related(X, Z) :-
 	related(Y, Z),
-	pf(X, Top),
-	pf(Y, Top),
+	pater_familias(X, Top),
+	pater_familias(Y, Top),
 	!.
 
 % T4
@@ -54,4 +54,4 @@ related(X, Y) :- related(Y, X), !.
 % default values
 element_type(_, _) :- false.
 gen(_, _) :- false.
-pf(X, X).
+pater_familias(X, X).
