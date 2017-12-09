@@ -36,6 +36,13 @@ related(X, Z) :-
 	related(Y, Z),
 	!.
 
+% T5 & T6
+related(X, Y) :-
+	element_type(X, T1),
+	element_type(Y, T2),
+	related(T1, T2),
+	!.
+
 % T2
 related(X, Y) :- related(Y, X), !.
 
