@@ -314,6 +314,8 @@ $\begin{aligned}
 
 ### Specialization
 
+Bol.com sells a lot of different products, which all have a price, a category, …, which we left out of this model for simplicity's sake. There are subcategories of these products which have additional attributes. Take books, for example, which have an author. Not every product has an author, and we do not want to many null column in the data base, so we make a specialization of products, which has a relation with the author entity type.
+
 ![Diagram 9](diagrams/diagram_9.pdf)\ 
 
 $\OO = \EE \cup \FF \cup \LL$
