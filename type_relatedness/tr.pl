@@ -1,7 +1,7 @@
 % author: Hendrik Werner s4549775
 
 % T1
-related(X, X).
+related(X, X) :- !.
 
 % T2
-related(X, Y) :- related(Y, X).
+related(X, Y) :- related(Y, X), !.
