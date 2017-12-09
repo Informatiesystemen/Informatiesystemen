@@ -10,5 +10,11 @@ related(X, Z) :-
 	pf(Y, Top),
 	!.
 
+% T4
+related(X, Z) :-
+	gen(X, Y),
+	related(Y, Z),
+	!.
+
 % T2
 related(X, Y) :- related(Y, X), !.
