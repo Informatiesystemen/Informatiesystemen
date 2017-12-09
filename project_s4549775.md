@@ -316,6 +316,22 @@ $\begin{aligned}
 
 ![Diagram 9](diagrams/diagram_9.pdf)\ 
 
+$\OO = \EE \cup \FF \cup \LL$
+
+$\EE$ = {product, book, author}
+
+$\FF$ = {{$p_1, p_2$}}
+
+$\LL$ = {product ID, author name}
+
+$\PP = \{p_1, p_2\}$
+
+$\begin{aligned}
+	Base(p_1) &= Book & Base(p_2) &= Author\\
+\end{aligned}$
+
+$Spec$ = {(Book, Product)}
+
 ### Generalization
 
 ![Diagram 10](diagrams/diagram_10.pdf)\ 
