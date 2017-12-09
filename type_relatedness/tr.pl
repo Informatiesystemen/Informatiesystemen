@@ -18,3 +18,6 @@ related(X, Z) :-
 
 % T2
 related(X, Y) :- related(Y, X), !.
+
+% default values
+gen(X, Y) :- false.
