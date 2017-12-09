@@ -9,6 +9,12 @@
 %% related(a, b).
 % ?- related(b, a).
 
+% T3
+%% pf(z, y).
+%% pf(x, y).
+%% related(z, y).
+% ?- related(z, x).
+
 % T1
 related(X, X) :- !.
 
