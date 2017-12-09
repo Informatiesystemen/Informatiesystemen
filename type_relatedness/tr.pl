@@ -53,5 +53,5 @@ related(X, Y) :- related(Y, X), !.
 
 % default values
 element_type(_, _) :- false.
-gen(X, Y) :- false.
+gen(_, _) :- false.
 pf(X, X).
