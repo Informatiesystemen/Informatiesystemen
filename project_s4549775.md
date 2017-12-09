@@ -58,6 +58,8 @@ $Fact : \PP \rightarrow \FF$                  Yield the fact type containing the
                                               $Fact(p) = f \leftrightarrow p \in f$
 $Pop : \OO \rightarrow \pow(\Omega)$          Yield the instances of an object type
                                               $\pow$ denotes the powerset
+$\sqcap : \OO \rightarrow \OO$                Yield the pater familias of an object type
+                                              idempotent: $\sqcap(x) = \sqcap(\sqcap(x)$)
 $\prec \subseteq \CC \times \OO$              decomposition of schema types
                                               $X \prec A \leftrightarrow X$ contains $A$
 $Spec \subseteq \EE \times \OO \setminus \LL$ specialization of entity types
