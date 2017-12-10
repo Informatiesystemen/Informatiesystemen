@@ -26,7 +26,7 @@
 % ?- related(x, y).
 
 % T2
-type_related(X, Y) :- related(Y, X), !; related(Y, X).
+type_related(X, Y) :- related(X, Y); related(Y, X).
 
 % T1
 related(X, X).
