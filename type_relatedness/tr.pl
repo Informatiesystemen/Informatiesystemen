@@ -33,9 +33,9 @@ related(X, X).
 
 % T3
 related(X, Z) :-
-	type_related(Y, Z),
 	pater_familias(X, Top),
-	pater_familias(Y, Top).
+	pater_familias(Y, Top),
+	type_related(Y, Z).
 
 % T4
 related(X, Z) :-
