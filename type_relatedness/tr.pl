@@ -25,6 +25,12 @@
 %% element_type(y, z).
 % ?- type_related(x, y).
 
+% Figure 2.26
+%% element_type(b, a).
+%% element_type(e, d).
+%% gen(a, c).
+%% gen(a, b).
+
 % T2
 type_related(X, Y) :- related(X, Y); related(Y, X).
 
