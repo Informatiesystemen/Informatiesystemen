@@ -68,7 +68,7 @@ $Gen \subseteq \EE \times \OO \setminus \LL$  generalization of entity types
                                               $\gen{X}{Y} \leftrightarrow X$ is a generalization of $Y$
 $\sim \subseteq \OO \times \OO$               type relatedness
                                               $X \sim Y \leftrightarrow X$ and $Y$ are type related
-                                              $X \not \sim Y \rightarrow Pop(X) \cap Pop(Y) = \varnothing$
+                                              $X \not \sim Y \rightarrow Pop(X) \cap Pop(Y) = ø$
 --------------------------------------------- ---------------------------------------------------------------
 : Functions and Relations \label{th:functions}
 
@@ -308,8 +308,8 @@ $\begin{aligned}
 \end{aligned}$
 
 $\begin{aligned}
-	Pop_{s_1}(R) &= \varnothing & Pop_{s_1}(i) &= \varnothing\\
-	Pop_{s_1}(S) &= \{s_3, s_4\} & Pop_{s_1}(i) &= \varnothing\\
+	Pop_{s_1}(R) &= ø & Pop_{s_1}(i) &= ø\\
+	Pop_{s_1}(S) &= \{s_3, s_4\} & Pop_{s_1}(i) &= ø\\
 \end{aligned}$
 
 ## Week 4
@@ -362,7 +362,7 @@ $Gen$ = {(Person, Customer), (Person, Employee), (Person, Reseller)}
 
 Type relatedness is a concept that tells us whether it is theoretically possible for two populations to overlap. It can be used by databases and compilers, to check whether some statement or query is theoretically possible.
 
-If we have the following statement $Pop(X) = Pop(Y)$, then the compiler can use type relatedness to check, whether the condition can ever be true. We know that $X \not \sim Y \rightarrow Pop(X) \cap Pop(Y) = \varnothing$, so if the types are not related, than the statement can never be true. The compiler could issue a warning in such a case, as writing statements that can never be true was probably not the programmers intention.
+If we have the following statement $Pop(X) = Pop(Y)$, then the compiler can use type relatedness to check, whether the condition can ever be true. We know that $X \not \sim Y \rightarrow Pop(X) \cap Pop(Y) = ø$, so if the types are not related, than the statement can never be true. The compiler could issue a warning in such a case, as writing statements that can never be true was probably not the programmers intention.
 
 There is a set of simple derivation rules that can be followed to derive all type relations. Once we hit a fixed point, meaning that we cannot derive further type relations from the derivation rules, we know that we found all related types.
 
@@ -446,9 +446,9 @@ $Pop(dr) = \{(r_2, Pop_{r_2})\}$
 $Pop(ds) = \{(s_3, Pop_{s_3}), (s_4, Pop_{s_4})\}$
 
 $\begin{aligned}
-	Pop_{r_2}(R) &= \{r_1\} & Pop_{r_2}(S) &= \varnothing & Pop_{r_2}(i) &= \varnothing & Pop_{r_2}(o) &= \varnothing \\
-	Pop_{s_3}(R) &= \varnothing & Pop_{s_3}(S) &= \{s_1\} & Pop_{s_3}(i) &= \varnothing & Pop_{s_3}(o) &= \varnothing \\
-	Pop_{s_4}(R) &= \varnothing & Pop_{s_4}(S) &= \{s_2\} & Pop_{s_4}(i) &= \varnothing & Pop_{s_4}(o) &= \varnothing \\
+	Pop_{r_2}(R) &= \{r_1\} & Pop_{r_2}(S) &= ø & Pop_{r_2}(i) &= ø & Pop_{r_2}(o) &= ø \\
+	Pop_{s_3}(R) &= ø & Pop_{s_3}(S) &= \{s_1\} & Pop_{s_3}(i) &= ø & Pop_{s_3}(o) &= ø \\
+	Pop_{s_4}(R) &= ø & Pop_{s_4}(S) &= \{s_2\} & Pop_{s_4}(i) &= ø & Pop_{s_4}(o) &= ø \\
 \end{aligned}$
 
 What can be deduced from the model? Lets break the formula down like this: $\forall r, s: p \rightarrow (\phi \leftrightarrow \psi)$, where precondition $p$ is necessary, and $\psi$ is the sufficient condition for $\phi$.
@@ -646,11 +646,11 @@ Here we use the ordering inherent to tuples to store the position of element typ
 
 In this representation it is more difficult to define the type of $Pop$, let us have a try:
 
-$Pop : \OO \rightarrow \Omega \rightarrow \varnothing \cup \Omega \cup (\Omega \times \Omega) \cup (\Omega \times \Omega \times \Omega) \cup …$
+$Pop : \OO \rightarrow \Omega \rightarrow ø \cup \Omega \cup (\Omega \times \Omega) \cup (\Omega \times \Omega \times \Omega) \cup …$
 
 Basically we need some equivalent of power sets, but for tuples. As far as I am aware such a tool does not exist, but we can define it:
 
-$\pow_\times(A) := \varnothing \cup A \cup (A \times A) \cup (A \times A \times A) \cup …$
+$\pow_\times(A) := ø \cup A \cup (A \times A) \cup (A \times A \times A) \cup …$
 
 With this new device, we can finally define the type of the proposed $Pop$ as
 
