@@ -503,7 +503,7 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 * T3: $\sqcap(x) = \sqcap(y) \land y \sim z \vdash x \sim z$
 
-	$\sqcap(x) = \sqcap(y) = a \rightarrow Pop(x) \subseteq Pop(a) \land Pop(y) \subseteq Pop(a)$
+	$\sqcap(x) = \sqcap(y) = a \rightarrow Pop(x) \subseteq Pop(a) \land Pop(y) \subseteq Pop(a) \rightarrow x \sim a \land y \sim a$
 
 	$y \sim z \rightarrow Pop(y) \cap Pop(z)$ may not be empty, so $a \sim z$, so it follows that $x \sim z$.
 
