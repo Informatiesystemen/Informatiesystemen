@@ -487,6 +487,16 @@ $\forall (r, s) \in Pop(i): (r, s) \in Pop_X(i) \leftrightarrow r \in Pop_X(R) \
 
 $\forall (r, s) \in Pop(o): (r, s) \in Pop_X(o) \leftrightarrow r \in Pop_X(R) \land s \in Pop_X(S)$
 
+## Week 4
+
+### Type Relatedness
+
+Let's look at whether the type derivation rules make sense.
+
+* T1: $\vdash x \sim x$
+
+	It is self evident that an object type can contain instances of itself.
+
 # Extension
 
 ## Week 2
