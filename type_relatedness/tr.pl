@@ -31,6 +31,10 @@
 %% gen(a, c).
 %% gen(a, b).
 
+related_types(X, RelatedTypes) :-
+	findall(Y, type_related(X, Y), RT),
+	sort(RT, RelatedTypes). % sort/2 also removes duplicates
+
 % T2
 type_related(X, Y) :- related(X, Y); related(Y, X).
 
