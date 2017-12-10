@@ -35,6 +35,7 @@ related(X, X).
 related(X, Z) :-
 	pater_familias(X, Top),
 	pater_familias(Y, Top),
+	X \= Y,
 	type_related(Y, Z).
 
 % T4
