@@ -25,12 +25,15 @@
 %% element_type(y, z).
 % ?- related(x, y).
 
+% T2
+type_related(X, Y) :- related(Y, X), !; related(Y, X).
+
 % T1
 related(X, X) :- !.
 
 % T3
 related(X, Z) :-
-	related(Y, Z),
+	type_related(Y, Z),
 	pater_familias(X, Top),
 	pater_familias(Y, Top),
 	!.
@@ -38,18 +41,15 @@ related(X, Z) :-
 % T4
 related(X, Z) :-
 	gen(X, Y),
-	related(Y, Z),
+	type_related(Y, Z),
 	!.
 
 % T5 & T6
 related(X, Y) :-
 	element_type(X, T1),
 	element_type(Y, T2),
-	related(T1, T2),
+	type_related(T1, T2),
 	!.
-
-% T2
-related(X, Y) :- related(Y, X), !.
 
 % default values
 element_type(_, _) :- false.
