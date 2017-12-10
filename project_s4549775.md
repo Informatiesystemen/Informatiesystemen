@@ -491,7 +491,7 @@ $\forall (r, s) \in Pop(o): (r, s) \in Pop_X(o) \leftrightarrow r \in Pop_X(R) \
 
 ### Type Relatedness
 
-Let's look at whether the type derivation rules make sense.
+Let's look the soundness of the derivation rules. This means checking whether every type relation that can be derived is actually true.
 
 * T1: $\vdash x \sim x$
 
