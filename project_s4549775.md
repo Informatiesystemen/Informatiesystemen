@@ -513,6 +513,12 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 	$y \sim z \rightarrow Pop(y) \cap Pop(z)$ may not be empty, so $Pop(x) \cap Pop(z)$ may not be empty.
 
+* T5: $x, y \in \GG \land Elt(x) \sim Elt(y) \vdash x \sim y$
+
+* T6: $x, y \in \SS \land Elt(x) \sim Elt(y) \vdash x \sim y$
+
+* T7: $\OO_x = \OO_y \vdash x \sim y$
+
 # Extension
 
 ## Week 2
