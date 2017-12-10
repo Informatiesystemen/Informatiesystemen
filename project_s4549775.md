@@ -509,6 +509,12 @@ Let's look at whether the type derivation rules make sense.
 
 	As $Pop(y) \cap Pop(x)$ may not be empty, $Pop(z) \cap Pop(y)$ may also not be empty, which is the definition of type relatedness.
 
+* T4: $\gen{x}{y} \land y \sim z \vdash x \sim z$
+
+	$\gen{x}{y} \rightarrow Pop(y) \subseteq Pop(x)$
+
+	$y \sim z \rightarrow Pop(y) \cap Pop(z)$ may not be empty, so $Pop(x) \cap Pop(z)$ may not be empty.
+
 # Extension
 
 ## Week 2
