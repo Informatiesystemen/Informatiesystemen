@@ -505,9 +505,7 @@ Let's look at whether the type derivation rules make sense.
 
 	$\sqcap(x) = \sqcap(y) = a \rightarrow Pop(x) \subseteq Pop(a) \land Pop(y) \subseteq Pop(a)$
 
-	$y \sim z \rightarrow Pop(y) \cap Pop(z)$ may not be empty
-
-	As $Pop(y) \cap Pop(x)$ may not be empty, $Pop(z) \cap Pop(y)$ may also not be empty, which is the definition of type relatedness.
+	$y \sim z \rightarrow Pop(y) \cap Pop(z)$ may not be empty, so $a \sim z$, so it follows that $x \sim z$.
 
 * T4: $\gen{x}{y} \land y \sim z \vdash x \sim z$
 
