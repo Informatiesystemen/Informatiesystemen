@@ -497,6 +497,10 @@ Let's look at whether the type derivation rules make sense.
 
 	It is self evident that an object type can contain instances of itself.
 
+* T2: $x \sim y \vdash y \sim x$
+
+	Type relatedness is symmetric, which makes sense, as $Pop(x) \cup Pop(y) = Pop(y) \cup Pop(x)$.
+
 # Extension
 
 ## Week 2
