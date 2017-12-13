@@ -552,6 +552,22 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 * T7: $\OO_x = \OO_y \vdash x \sim y$
 
+	This should also be pretty self explanatory, so let's do another example.
+
+	$\begin{aligned}
+		\OO &= \EE \cup \CC & \EE &= \{A\} & \CC &= \{X, Y\}\\
+	\end{aligned}$
+
+	$\prec$ = {(X, A), (Y, A)}
+
+	$Pop(A) = \{a_1\}$
+
+	$Pop(X) = Pop(Y) = \{Pop_J\}$
+
+	$Pop_J(A) = \{a_1\}$
+
+	$\OO_X = \OO_Y$, and $Pop(X) \cap Pop(Y) \neq ø$, so T7 holds.
+
 Applying the type relatedness derivation rules by hand is tedious and error prone, so I implemented a type relatedness derivation algorithm in Prolog, pretty much literally translating the derivation rules.
 
 # Extension
