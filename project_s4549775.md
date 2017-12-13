@@ -544,6 +544,8 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 * T7: $\OO_x = \OO_y \vdash x \sim y$
 
+Applying the type relatedness derivation rules by hand is tedious and error prone, so I implemented a type relatedness derivation algorithm in Prolog, pretty much literally translating the derivation rules.
+
 # Extension
 
 ## Week 2
