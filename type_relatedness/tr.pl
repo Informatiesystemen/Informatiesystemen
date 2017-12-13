@@ -37,8 +37,10 @@
 % Figure 2.26
 %% element_type(b, a).
 %% element_type(e, d).
+%% element_type(f, e).
 %% gen(a, c).
 %% gen(a, b).
+%% pater_familias(d, a).
 
 related_types(X, RelatedTypes) :-
 	findall(Y, type_related(X, Y), RT),
