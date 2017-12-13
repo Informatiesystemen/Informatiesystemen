@@ -515,6 +515,31 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 * T5: $x, y \in \GG \land Elt(x) \sim Elt(y) \vdash x \sim y$
 
+	This is pretty self evident as well, but we can give a population of a model that satisfies the contraints, and in which $Pop(x) \cap Pop(y) \neq ø$. Since type relatedness says, that it is **possible** to have population overlap, but not **necessary**, showing en example in which there is overlap is sufficient.
+
+	$\begin{aligned}
+		\OO &= \EE \cup \GG & \EE &= \{A\} & \GG &= \{X, Y\}
+	\end{aligned}$
+
+	$\begin{aligned}
+		Elt(X) &= A & Elt(Y) &= A\\
+	\end{aligned}$
+
+	$\begin{aligned}
+		Pop(A) &= \{a_1\} & Pop(X) &= \{b_1\} & Pop(Y) &= \{b_1\}\\
+	\end{aligned}$
+
+	$\begin{aligned}
+		Pop(\epsilon_X) &= \{t_1\} & Pop(\epsilon_Y) &= \{t_2\}\\
+	\end{aligned}$
+
+	$\begin{aligned}
+		t_1(\epsilon_X^e) &= a_1 & t_1(\epsilon_X^p) &= b_1\\
+		t_2(\epsilon_Y^e) &= a_1 & t_2(\epsilon_Y^p) &= b_1\\
+	\end{aligned}$
+
+	As you can see $X, Y \in \GG$ and $Elt(X) \sim Elt(Y)$ (as per T1), and $Pop(X) \cap Pop(Y) \neq ø$, so T5 is sound.
+
 * T6: $x, y \in \SS \land Elt(x) \sim Elt(y) \vdash x \sim y$
 
 * T7: $\OO_x = \OO_y \vdash x \sim y$
