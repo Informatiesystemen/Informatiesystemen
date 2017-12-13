@@ -20,7 +20,16 @@
 %% related(x, z).
 % ?- type_related(y, z).
 
-% T5 & T6
+% T5
+%% group_type(x).
+%% group_type(y).
+%% element_type(x, z).
+%% element_type(y, z).
+% ?- type_related(x, y).
+
+% T6
+%% seqence_type(x).
+%% seqence_type(y).
 %% element_type(x, z).
 %% element_type(y, z).
 % ?- type_related(x, y).
@@ -53,8 +62,18 @@ related(X, Z) :-
 	gen(X, Y),
 	type_related(Y, Z).
 
-% T5 & T6
+% T5
 related(X, Y) :-
+	group_type(X),
+	group_type(Y),
+	element_type(X, T1),
+	element_type(Y, T2),
+	type_related(T1, T2).
+
+% T6
+related(X, Y) :-
+	seqence_type(X),
+	seqence_type(Y),
 	element_type(X, T1),
 	element_type(Y, T2),
 	type_related(T1, T2).
@@ -62,4 +81,6 @@ related(X, Y) :-
 % default values
 element_type(_, _) :- false.
 gen(_, _) :- false.
+group_type(_) :- false.
 pater_familias(X, X).
+seqence_type(_) :- false.
