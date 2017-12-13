@@ -542,6 +542,14 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 * T6: $x, y \in \SS \land Elt(x) \sim Elt(y) \vdash x \sim y$
 
+	Take the same model as for T5, except that instead of $\GG = ø$, but $\SS = \{X, Y\}$.
+
+	$\begin{aligned}
+		\OO &= \EE \cup \SS & \EE &= \{A\} & \SS &= \{X, Y\}
+	\end{aligned}$
+
+	We can use exactly the same population, such that $X, Y \in \SS$ and $Elt(X) \sim Elt(Y)$ (as per T1), and $Pop(X) \cap Pop(Y) \neq ø$, so T6 is sound.
+
 * T7: $\OO_x = \OO_y \vdash x \sim y$
 
 Applying the type relatedness derivation rules by hand is tedious and error prone, so I implemented a type relatedness derivation algorithm in Prolog, pretty much literally translating the derivation rules.
