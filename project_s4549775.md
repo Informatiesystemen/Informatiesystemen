@@ -29,7 +29,7 @@ In this document we want to apply, evaluate, and try to improve the information 
 
 ## Theory overview
 
---------- ---------------------------------------
+--------- -------------------------------------------------------
 $\PP$     predicators / roles
 $\OO$     object types
 $\Omega$  instances of $\OO$
@@ -46,10 +46,10 @@ $\LL$     label types
           $\LL \subseteq \OO$
 $\SS$     sequence types
           $\SS \in \OO$
-$\II$     model
+$\II$     information structure
           $\II = \{\CC, \EE, \FF, \GG, \LL, …\}$
-$POP_\II$ all possible populations of model $\II$
---------- ---------------------------------------
+$POP_\II$ all possible populations of information structure $\II$
+--------- -------------------------------------------------------
 : Sets \label{th:sets}
 
 --------------------------------------------- ---------------------------------------------------------------
