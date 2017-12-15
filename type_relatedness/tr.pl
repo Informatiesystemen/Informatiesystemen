@@ -61,7 +61,9 @@ related(X, Y) :-
 related(X, Z) :-
 	pater_familias(X, Top),
 	pater_familias(Y, Top),
-	X \= Y,
+	atom_string(X, XS),
+	atom_string(Y, YS),
+	XS < YS,
 	related(Y, Z).
 
 % T4
