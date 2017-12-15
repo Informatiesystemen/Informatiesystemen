@@ -725,3 +725,54 @@ $\pow_\times(A) := Ã¸ \cup A \cup (A \times A) \cup (A \times A \times A) \cup â
 With this new device, we can finally define the type of the proposed $Pop$ as
 
 $Pop : \OO \rightarrow \Omega \rightarrow \pow_\times(\Omega)$
+
+## Week 4
+
+### Type Relatedness
+
+Literally translating the type relatedness derivation rules into Prolog resulted in infinite recursion, caused by the reordering of terms, and recursive nature of the derivation rules.
+
+To solve this problem, it is possible to impose a total ordering on the object types, and use that ordering to break infinite recursion. How the ordering is established is not important, I used the lexicographical ordering of their string representations.
+
+For T2, a literal translation looks like this:
+
+`related(X, Y) :- related(Y, X).`
+
+However this just leads to infinite recursion, so a total ordering was imposed on the object types:
+
+```
+% T2
+related(X, Y) :-
+	atom(X), atom(Y),
+	atom_string(X, XS),
+	atom_string(Y, YS),
+	XS > YS,
+	related(Y, X).
+```
+
+If we take care to define our knowledge base such that $\forall X, Y \in \OO:$ `related(X, Y).` $\rightarrow X < Y$, then we do not run into this infinite loop anymore.
+
+With T3 we run into a similar problem with the literal translation:
+
+```
+% T3
+related(X, Z) :-
+	pater_familias(X, Top),
+	pater_familias(Y, Top),
+	related(Y, Z).
+```
+
+The total ordering solves this problem as well:
+
+```
+% T3
+related(X, Z) :-
+	pater_familias(X, Top),
+	pater_familias(Y, Top),
+	atom_string(X, XS),
+	atom_string(Y, YS),
+	XS < YS,
+	related(Y, Z).
+```
+
+I propose to add a total ordering $<_\OO$ to all object types. It does not matter what the order is, it just needs to be transitive. We can represent $<_\OO$ as a sequence which contains all the object types.
