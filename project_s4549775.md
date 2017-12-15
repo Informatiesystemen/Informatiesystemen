@@ -367,6 +367,18 @@ If we have the following statement $Pop(X) = Pop(Y)$, then the compiler can use 
 
 There is a set of simple derivation rules that can be followed to derive all type relations. Once we hit a fixed point, meaning that we cannot derive further type relations from the derivation rules, we know that we found all related types.
 
+## Week 5
+
+### Integrity Constraints
+
+If you look at the information structure from week one, a product could, for example, have multiple prices, which is generally not desirable. There is no known way to impose that limit on the level of the information structure, but we still want to avoid this situation.
+
+We could take care, to not insert multiple prices per product into the database, but that approach is error prone and has multiple drawbacks. If, for example, it was at first allowed for each customer to have multiple shopping carts, but then bol.com decides that one cart per customer is enough, the database might already contain instances where this assumption is violated. These instances would need to be found and fixed manually, while taking care not to introduce additional problems, or violating other integrity constraints.
+
+Formalizing additional rules that govern what data is allowed in the database can help with these problems. Therefore static and dynamic integrity constraints are introduced that restrict the information system. Static constraints disallow entering certain populations form the Universe of Discourse into the database, like population where products have multiple prices. Dynamic constraints restrict transitions between allowed populations in the Universe of Discourse, like switching customers from "married" to "unmarried". A customer can be "unmarried", but after he has been "married", he can only become "divorced", or "widowed", but not "unmarried" again.
+
+In the following we focus on static integrity constraints.
+
 # Evaluation
 
 ## Week 1
