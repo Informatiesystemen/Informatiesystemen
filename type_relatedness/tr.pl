@@ -42,9 +42,15 @@
 %% gen(a, b).
 %% pater_familias(d, a).
 
-related_types(X, RelatedTypes) :-
-	findall(Y, related(X, Y), RT),
-	sort(RT, RelatedTypes). % sort/2 also removes duplicates
+% related_types(+ObjectTypes, -RelatedTypes)
+related_types(ObjectTypes, RelatedTypes) :-
+	all_related(ObjectTypes, ObjectTypes, RelatedTypes).
+
+% all_related(+ObjectTypes1, +ObjectTypes2, -RelatedTypes)
+all_related([], Ys, []).
+all_related([X|Xs], Ys, [Related|AllRelated]) :-
+	convlist([Y, [X, Y]]>>related(X, Y), Ys, Related),
+	all_related(Xs, Ys, AllRelated).
 
 % T1
 related(X, X) :- !.
