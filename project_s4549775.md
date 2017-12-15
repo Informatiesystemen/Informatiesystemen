@@ -381,6 +381,8 @@ In the following we focus on static integrity constraints.
 
 ### Uniqueness Constraints
 
+We originally tried to represent the relation between products and their prices like this:
+
 ![Diagram 10a](diagrams/diagram_10a.pdf)\
 
 $\begin{aligned}
@@ -391,7 +393,11 @@ $\begin{aligned}
 	Base(p_1) &= product & Base(p_2) &= price\\
 \end{aligned}$
 
+There is no explicit uniqueness constraint on the fact type, so it implicitly looks like this:
+
 ![Diagram 10b](diagrams/diagram_10b.pdf)\
+
+This means that the combination of price and product instances in $f$ is unique, or formally $\forall t_1 = (u_1, v_1), t_2 = (u_2, v_2) \in Pop(f): u_1 = u_2 \land v_1 = v_2 \rightarrow t_1 = t_2$. In other words: Every tuple $(u, v)$ can only be in $Pop(f)$ once. This still allows one product to have multiple prices, which we want to avoid.
 
 ![Diagram 10c](diagrams/diagram_10c.pdf)\
 
