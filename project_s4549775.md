@@ -383,6 +383,14 @@ In the following we focus on static integrity constraints.
 
 ![Diagram 10a](diagrams/diagram_10a.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF \cup \LL & \EE &= \{product\} & \FF &= \{\{p_1, p_2\}\} & \LL &= \{product\ ID\} & \PP &= \{p_1, p_2\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= product & Base(p_2) &= price\\
+\end{aligned}$
+
 ![Diagram 10b](diagrams/diagram_10b.pdf)\
 
 ![Diagram 10c](diagrams/diagram_10c.pdf)\
