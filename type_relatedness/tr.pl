@@ -47,7 +47,7 @@ related_types(X, RelatedTypes) :-
 	sort(RT, RelatedTypes). % sort/2 also removes duplicates
 
 % T1
-related(X, X).
+related(X, X) :- !.
 
 % T2
 related(X, Y) :-
@@ -55,7 +55,8 @@ related(X, Y) :-
 	atom_string(X, XS),
 	atom_string(Y, YS),
 	XS > YS,
-	related(Y, X).
+	related(Y, X),
+	!.
 
 % T3
 related(X, Z) :-
@@ -64,12 +65,14 @@ related(X, Z) :-
 	atom_string(X, XS),
 	atom_string(Y, YS),
 	XS < YS,
-	related(Y, Z).
+	related(Y, Z),
+	!.
 
 % T4
 related(X, Z) :-
 	gen(X, Y),
-	related(Y, Z).
+	related(Y, Z),
+	!.
 
 % T5
 related(X, Y) :-
@@ -77,7 +80,8 @@ related(X, Y) :-
 	group_type(Y),
 	element_type(X, T1),
 	element_type(Y, T2),
-	related(T1, T2).
+	related(T1, T2),
+	!.
 
 % T6
 related(X, Y) :-
@@ -85,7 +89,8 @@ related(X, Y) :-
 	seqence_type(Y),
 	element_type(X, T1),
 	element_type(Y, T2),
-	related(T1, T2).
+	related(T1, T2),
+	!.
 
 % default values
 element_type(_, _) :- false.
