@@ -379,6 +379,14 @@ Formalizing additional rules that govern what data is allowed in the database ca
 
 In the following we focus on static integrity constraints.
 
+### Uniqueness Constraints
+
+![Diagram 10a](diagrams/diagram_10a.pdf)\
+
+![Diagram 10b](diagrams/diagram_10b.pdf)\
+
+![Diagram 10c](diagrams/diagram_10c.pdf)\
+
 # Evaluation
 
 ## Week 1
