@@ -19,6 +19,7 @@ header-includes:
 \renewcommand{\SS}{\mathcal{S}}
 
 \newcommand{\gen}[2]{#1\ Gen\ #2}
+
 \newcommand{\pow}{\mathscr{P}}
 \newcommand{\spec}[2]{#1\ Spec\ #2}
 
