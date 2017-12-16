@@ -399,7 +399,11 @@ There is no explicit uniqueness constraint on the fact type, so it implicitly lo
 
 This means that the combination of price and product instances in $f$ is unique, or formally $\forall t_1 = (u_1, v_1), t_2 = (u_2, v_2) \in Pop(f): u_1 = u_2 \land v_1 = v_2 \rightarrow t_1 = t_2$. In other words: Every tuple $(u, v)$ can only be in $Pop(f)$ once. This still allows one product to have multiple prices, which we want to avoid.
 
+To prevent multiple prices per product, we need $u$ or $v$ to be unique in $f$, not their combinations. The constraint then looks as follows:
+
 ![Diagram 10c](diagrams/diagram_10c.pdf)\
+
+This means that for every instance of product, there is at most one tuple in $f$, or formally $\forall t_1 = (u_1, v_1), t_2 = (u_2, v_2): u_1 = u_2 \rightarrow t_1 = t_2$. That means that if we already have a tuple $(product_1, price_1)$, we cannot add an additional tuple with $product_1$, so we can only assign one price per product.
 
 # Evaluation
 
