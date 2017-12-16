@@ -609,6 +609,12 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 Applying the type relatedness derivation rules by hand is tedious and error prone, so I implemented a type relatedness derivation algorithm in Prolog, pretty much literally translating the derivation rules.
 
+## Week 5
+
+### Uniqueness Constraints
+
+Uniqueness constraints can be much more complicated than we have explored so far. They can be used to guarantee uniqueness of combinations of any number of instances, as long as their relations can be joined into a single fact type using the $\xi$ operator.
+
 # Extension
 
 ## Week 2
