@@ -106,7 +106,7 @@ Next we start identifying their relationships.
 
 With this information we can already draw our first diagram.
 
-![Diagram 1](diagrams/diagram_1.pdf)\ 
+![Diagram 1](diagrams/diagram_1.pdf)\
 
 $\OO = \EE \cup \FF \cup \LL$
 
@@ -136,11 +136,11 @@ bol.com might suggest groups of products to be bought together, like Amazon does
 
 We disregard the other object types we identified for now, and just look at the products. The model of a product grouping using group types could look like this.
 
-![Diagram 2a](diagrams/diagram_2a.pdf)\ 
+![Diagram 2a](diagrams/diagram_2a.pdf)\
 
 Which implicitly contains the fact type $\epsilon_{Product Group}$, or $\epsilon_{PG}$ for short.
 
-![Diagram 2b](diagrams/diagram_2b.pdf)\ 
+![Diagram 2b](diagrams/diagram_2b.pdf)\
 
 $\OO = \EE \cup \FF \cup \GG \cup \LL$
 
@@ -177,11 +177,11 @@ $\begin{aligned}
 
 There may also be groups of products with an ordering inherent to them. Think of books, movies, … with sequels, for example. The group types are not sufficient to represent this, as there is no ordering to the element types. Therefore sequence types are introduced, which supplement group types with an ordering.
 
-![Diagram 3a](diagrams/diagram_3a.pdf)\ 
+![Diagram 3a](diagrams/diagram_3a.pdf)\
 
 In addition to the implicit fact type $\epsilon_{PS}$, there is also an implicit objectification of $\epsilon_{PS}$, as well as the implicit fact type $@_{PS}$ between the objectification of $\epsilon_{PS}$, and index $I$.
 
-![Diagram 3b](diagrams/diagram_3b.pdf)\ 
+![Diagram 3b](diagrams/diagram_3b.pdf)\
 
 $\OO = \EE \cup \FF \cup \GG \cup \LL$
 
@@ -232,7 +232,7 @@ Let there be chemical reactions R, and substances S. A chemical reaction has sub
 
 An example of this could look as follows:
 
-![Diagram 6a](diagrams/diagram_6a.pdf)\ 
+![Diagram 6a](diagrams/diagram_6a.pdf)\
 
 $s_1$ is the input of reaction $r_1$, which turns it into $s_2$.
 
@@ -242,11 +242,11 @@ $r_2$ consumes $s_3$, and outputs $s_5$. $r_3$ consumes $s_4$, and $s_5$, and ou
 
 By applying these decompositions we get this diagram:
 
-![Diagram 6b](diagrams/diagram_6b.pdf)\ 
+![Diagram 6b](diagrams/diagram_6b.pdf)\
 
 Schema types allow us to model these processes. The following model can describe processes and their decompositions.
 
-![Diagram 7](diagrams/diagram_7.pdf)\ 
+![Diagram 7](diagrams/diagram_7.pdf)\
 
 $\OO = \CC \cup \EE \cup \FF$
 
@@ -319,7 +319,7 @@ $\begin{aligned}
 
 Bol.com sells a lot of different products, which all have a price, a category, …, which we left out of this model for simplicity's sake. There are subcategories of these products which have additional attributes. Take books, for example, which have an author. Not every product has an author, and we do not want to many null column in the data base, so we make a specialization of products, which has a relation with the author entity type.
 
-![Diagram 9](diagrams/diagram_9.pdf)\ 
+![Diagram 9](diagrams/diagram_9.pdf)\
 
 $\OO = \EE \cup \FF \cup \LL$
 
@@ -341,7 +341,7 @@ $Spec$ = {(Book, Product)}
 
 Bol.com may keep different records for employees, customers, and resellers, with different attributes, which are not shown here, to keep the model simple. However, all of these entity types have some attributes in common, like an address. We could define a fact type for each of them, linking to the address label type. Alternatively we create a generalization of the entity types, and have a single fact type linking their generalization to the address.
 
-![Diagram 10](diagrams/diagram_10.pdf)\ 
+![Diagram 10](diagrams/diagram_10.pdf)\
 
 $\OO = \EE \cup \FF \cup \LL$
 
@@ -464,7 +464,7 @@ $\forall r, s: ((r, Pop_r) \in Pop(dr) \land (Pop_s, s) \in Pop(ds)) \rightarrow
 
 This is pretty unwieldy, but if you look at an example it becomes clear. Take the following model:
 
-![Diagram 8a](diagrams/diagram_8a.pdf)\ 
+![Diagram 8a](diagrams/diagram_8a.pdf)\
 
 $Pop(R) = \{r_1, r_2\}$
 
@@ -512,7 +512,7 @@ $\psi$ holds for $(r_1, s_2)$, so as per $\phi$ we deduced that $(r_2, s_4) \in 
 
 We successfully demonstrated that even though we did not explicitly put these relations into the knowledge base, they are deducible. Our deductions result in the following diagram.
 
-![Diagram 8b](diagrams/diagram_8b.pdf)\ 
+![Diagram 8b](diagrams/diagram_8b.pdf)\
 
 This is what you would expect, looking at the version we started with.
 
@@ -625,7 +625,7 @@ I think the universe of instances can be more easily defined like this: $\sigma 
 
 Let us check whether this extension still works with normal fact types. For this we take a very simple model:
 
-![Diagram 5](diagrams/diagram_5.pdf)\ 
+![Diagram 5](diagrams/diagram_5.pdf)\
 
 $\OO = \EE \cup \FF$
 
@@ -667,7 +667,7 @@ $Pop : \OO \rightarrow \Omega \rightarrow \pow(\Omega)$
 
 We again try to populate our simple model, to check whether this extension interferes with normal fact types.
 
-![Diagram 5](diagrams/diagram_5.pdf)\ 
+![Diagram 5](diagrams/diagram_5.pdf)\
 
 $\OO = \EE \cup \FF$
 
@@ -693,7 +693,7 @@ In conclusion, both of these proposed extensions are compatible with the theory.
 
 We could represent sequence types with implicit ternary relations.
 
-![Diagram 4](diagrams/diagram_4.pdf)\ 
+![Diagram 4](diagrams/diagram_4.pdf)\
 
 $\OO = \EE \cup \FF \cup \LL \cup \SS$
 
