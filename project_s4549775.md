@@ -619,6 +619,10 @@ Uniqueness constraints can be much more complicated than we have explored so far
 
 ![Diagram 11b](diagrams/diagram_11b.pdf)\
 
+![Diagram 12a](diagrams/diagram_12a.pdf)\
+
+![Diagram 12b](diagrams/diagram_12b.pdf)\
+
 # Extension
 
 ## Week 2
