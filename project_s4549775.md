@@ -581,7 +581,7 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 * T6: $x, y \in \SS \land Elt(x) \sim Elt(y) \vdash x \sim y$
 
-	Take the same model as for T5, except that instead of $\GG = ø$, but $\SS = \{X, Y\}$.
+	Take the same model as for T5, except that $\GG = ø$, and $\SS = \{X, Y\}$.
 
 	$\begin{aligned}
 		\OO &= \EE \cup \SS & \EE &= \{A\} & \SS &= \{X, Y\}
