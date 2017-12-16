@@ -615,9 +615,15 @@ Applying the type relatedness derivation rules by hand is tedious and error pron
 
 Uniqueness constraints can be much more complicated than we have explored so far. They can be used to guarantee uniqueness of combinations of any number of instances, as long as their relations can be joined into a single fact type using the $\xi$ operator.
 
+Let's take an example of a uniqueness constraint over 2 fact types:
+
 ![Diagram 11a](diagrams/diagram_11a.pdf)\
 
+$Base(p_2)$ must be type related to $Base(p_3)$, so we can join on $B$. $Base(p_1) = B \sim B = Base(p_3)$, so this condition is given. $\xi(unique(\{p_1, p_4\}))$ produces the following derived fact type:
+
 ![Diagram 11b](diagrams/diagram_11b.pdf)\
+
+This means that the combination of $A$ and $C$ is unique in $Pop(f)$ with regards to $B$, or formally $\forall t_1 = (u_1, v_1, w_1), t_2 = (u_2, v_2, w_2): u_1 = u_2 \land v_1 = v_2 \rightarrow t_1 = t_2$. In other words, there is at most one tuple in $Pop(f)$ for every combination of instances from $A$ and $C$.
 
 ![Diagram 12a](diagrams/diagram_12a.pdf)\
 
