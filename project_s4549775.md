@@ -615,6 +615,10 @@ Applying the type relatedness derivation rules by hand is tedious and error pron
 
 Uniqueness constraints can be much more complicated than we have explored so far. They can be used to guarantee uniqueness of combinations of any number of instances, as long as their relations can be joined into a single fact type using the $\xi$ operator.
 
+![Diagram 11a](diagrams/diagram_11a.pdf)\
+
+![Diagram 11b](diagrams/diagram_11b.pdf)\
+
 # Extension
 
 ## Week 2
