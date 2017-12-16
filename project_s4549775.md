@@ -61,6 +61,8 @@ $Pop : \OO \rightarrow \pow(\Omega)$          Yield the instances of an object t
                                               $\pow$ denotes the powerset
 $\sqcap : \OO \rightarrow \OO$                Yield the pater familias of an object type
                                               idempotent: $\sqcap(x) = \sqcap(\sqcap(x)$)
+$\xi : \pow(\PP) \rightarrow F$               Yield derived fact type for constraint $\tau : \pow(\PP)$
+                                              $F$ is the set of all possible fact types
 $\prec \subseteq \CC \times \OO$              decomposition of schema types
                                               $X \prec A \leftrightarrow X$ contains $A$
 $Spec \subseteq \EE \times \OO \setminus \LL$ specialization of entity types
