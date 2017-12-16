@@ -621,7 +621,7 @@ Let's take an example of a uniqueness constraint over 2 fact types:
 
 ![Diagram 11a](diagrams/diagram_11a.pdf)\
 
-$Base(p_2)$ must be type related to $Base(p_3)$, so we can join on $B$. $Base(p_1) = B \sim B = Base(p_3)$, so this condition is given. $\xi(unique(\{p_1, p_4\}))$ produces the following derived fact type:
+$Base(p_2)$ must be type related to $Base(p_3)$, so we can join on $B$. $Base(p_1) = B \sim B = Base(p_3)$, so this condition is given. $\xi(\{p_1, p_4\})$ produces the following derived fact type:
 
 ![Diagram 11b](diagrams/diagram_11b.pdf)\
 
@@ -631,7 +631,7 @@ This is generalizable to any number of fact types, as long as they are joinable.
 
 ![Diagram 12a](diagrams/diagram_12a.pdf)\
 
-For the uniqueness constraint to be valid, $Base(p_2)$ must be type related to $Base(p_3)$, and $Base(p_5)$ must be type related to $Base(p_6)$. $Base(p_2) = B \sim B = Base(p_3) \land Base(p_5) = C \sim C = Base(p_6)$, so the condition is fulfilled. $\xi(unique(\{p_1, p_4, p_7\}))$ produces the following derived fact type:
+For the uniqueness constraint to be valid, $Base(p_2)$ must be type related to $Base(p_3)$, and $Base(p_5)$ must be type related to $Base(p_6)$. $Base(p_2) = B \sim B = Base(p_3) \land Base(p_5) = C \sim C = Base(p_6)$, so the condition is fulfilled. $\xi(\{p_1, p_4, p_7\})$ produces the following derived fact type:
 
 ![Diagram 12b](diagrams/diagram_12b.pdf)\
 
