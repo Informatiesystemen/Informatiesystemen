@@ -625,9 +625,15 @@ $Base(p_2)$ must be type related to $Base(p_3)$, so we can join on $B$. $Base(p_
 
 This means that the combination of $A$ and $C$ is unique in $Pop(f)$ with regards to $B$, or formally $\forall t_1 = (u_1, v_1, w_1), t_2 = (u_2, v_2, w_2): u_1 = u_2 \land v_1 = v_2 \rightarrow t_1 = t_2$. In other words, there is at most one tuple in $Pop(f)$ for every combination of instances from $A$ and $C$.
 
+This is generalizable to any number of fact types, as long as they are joinable. Let us look at a more complicated example, that requires multiple joins:
+
 ![Diagram 12a](diagrams/diagram_12a.pdf)\
 
+For the uniqueness constraint to be valid, $Base(p_2)$ must be type related to $Base(p_3)$, and $Base(p_5)$ must be type related to $Base(p_6)$. $Base(p_2) = B \sim B = Base(p_3) \land Base(p_5) = C \sim C = Base(p_6)$, so the condition is fulfilled. $\xi(unique(\{p_1, p_4, p_7\}))$ produces the following derived fact type:
+
 ![Diagram 12b](diagrams/diagram_12b.pdf)\
+
+This means that the combination of $A, D$, and $E$ if unique in $Pop(f)$ with regards to the combination of $B$ and $C$, formally $\forall t_1 = (a_1, d_1, e_1, b_1, c_1), t_2 = (a_1, d_2, e_2, b_2, c_2): a_1 = a_2 \land d_1 = d_2 \land e_1 = e_2 \rightarrow t_1 = t_2$. In other words, there is at most one tuple in $Pop(f)$ for every combination of instances of $A, D$, and $E$.
 
 # Extension
 
