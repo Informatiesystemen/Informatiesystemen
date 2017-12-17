@@ -635,6 +635,14 @@ This is generalizable to any number of fact types, as long as they are joinable.
 
 ![Diagram 12a](diagrams/diagram_12a.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF & \EE &= \{A, B, C, D, E\} & \FF &= \{f, g, h\} & f &= \{p_1, p_2\} & g &= \{p_3, p_4, p_5\} & h &= \{p_6, p_7\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	unique(\tau) && \tau &= \{p_1, p_4, p_7\}\\
+\end{aligned}$
+
 For the uniqueness constraint to be valid, $Base(p_2)$ must be type related to $Base(p_3)$, and $Base(p_5)$ must be type related to $Base(p_6)$. $Base(p_2) = B \sim B = Base(p_3) \land Base(p_5) = C \sim C = Base(p_6)$, so the condition is fulfilled. $\xi(\{p_1, p_4, p_7\})$ produces the following derived fact type:
 
 ![Diagram 12b](diagrams/diagram_12b.pdf)\
