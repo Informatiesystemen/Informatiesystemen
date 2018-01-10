@@ -429,6 +429,18 @@ We can represent the same constraint using occurrence frequency constraints with
 
 ![Diagram 14](diagrams/diagram_14.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF \cup \LL & \EE &= \{account\} & \FF &= \{\{p_1, p_2\}\} & \LL &= \{account\ ID\} & \PP = \{p_1, p_2\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= account & Base(p_2) &= account\\
+\end{aligned}$
+
+$\begin{aligned}
+	frequency(\sigma, 0, 5) && \sigma &= \{p_1\}\\
+\end{aligned}$
+
 ### Total Role Constraints
 
 ### Set Constraints
