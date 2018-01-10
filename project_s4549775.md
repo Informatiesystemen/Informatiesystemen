@@ -413,6 +413,12 @@ In week 5 we already talked about integrity constraints, and uniqueness constrai
 
 ### Occurrence Frequency Constraints
 
+Uniqueness constraints allowed us to represent the restriction that instances of object types may be unique with respect to a set of predicators. This is already useful but can be generalized further, by requiring at least $n$, and at most $m$ occurrences of a combination of object type instances in a set of predicators, if they occur.
+
+We denote the occurrence frequency constraint is $frequency(\sigma, m, n)$, where $\sigma$ is the set of predicators. $frequency(\sigma, 0, 1) \equiv frequency(\sigma, 1, 1) \equiv unique(\sigma)$.
+
+Occurrence frequency constraints work very similarly to uniqueness constraints, in that their semantics are defined by the $\xi$ operator, which produces derived fact types.
+
 ### Total Role Constraints
 
 ### Set Constraints
