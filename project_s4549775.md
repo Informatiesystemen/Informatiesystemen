@@ -580,7 +580,7 @@ Let's look the soundness of the derivation rules. This means checking whether ev
 
 * T5: $x, y \in \GG \land Elt(x) \sim Elt(y) \vdash x \sim y$
 
-	This is pretty self evident as well, but we can give a population of a model that satisfies the contraints, and in which $Pop(x) \cap Pop(y) \neq ø$. Since type relatedness says, that it is **possible** to have population overlap, but not **necessary**, showing en example in which there is overlap is sufficient.
+	This is pretty self evident as well, but we can give a population of a model that satisfies the constraints, and in which $Pop(x) \cap Pop(y) \neq ø$. Since type relatedness says, that it is **possible** to have population overlap, but not **necessary**, showing en example in which there is overlap is sufficient.
 
 	$\begin{aligned}
 		\OO &= \EE \cup \GG & \EE &= \{A\} & \GG &= \{X, Y\}
