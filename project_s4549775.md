@@ -695,6 +695,8 @@ This means that the combination of $A, D$, and $E$ if unique in $Pop(f)$ with re
 
 ![Diagram 15a](diagrams/diagram_15a.pdf)\
 
+![Diagram 15b](diagrams/diagram_15b.pdf)\
+
 # Extension
 
 ## Week 2
