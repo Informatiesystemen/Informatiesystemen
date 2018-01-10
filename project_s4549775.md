@@ -427,6 +427,8 @@ We can represent the same constraint using occurrence frequency constraints with
 
 ![Diagram 13a](diagrams/diagram_13a.pdf)\ ![Diagram 13b](diagrams/diagram_13b.pdf)\
 
+Imagine bol.com wanted to offer family account sharing, where you can connect client accounts to host accounts, to allow sharing of coupons, wish lists, and so on. Customer accounts can be linked to each other to achieve this. bol.com does not have the resources, or even possibility to check whether all shared accounts actually belong to family members of each other. They still want to prevent blatant abuse of the feature, so they decide to go with what Steam did, and allow any two accounts to be shared, but only a maximum of 5 shares per account.
+
 ![Diagram 14](diagrams/diagram_14.pdf)\
 
 $\begin{aligned}
