@@ -427,6 +427,8 @@ We can represent the same constraint using occurrence frequency constraints with
 
 ![Diagram 13a](diagrams/diagram_13a.pdf)\ ![Diagram 13b](diagrams/diagram_13b.pdf)\
 
+![Diagram 14](diagrams/diagram_14.pdf)\
+
 ### Total Role Constraints
 
 ### Set Constraints
