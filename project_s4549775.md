@@ -687,6 +687,12 @@ For the uniqueness constraint to be valid, $Base(p_2)$ must be type related to $
 
 This means that the combination of $A, D$, and $E$ if unique in $Pop(f)$ with regards to the combination of $B$ and $C$, formally $\forall t_1 = (a_1, d_1, e_1, b_1, c_1), t_2 = (a_1, d_2, e_2, b_2, c_2): a_1 = a_2 \land d_1 = d_2 \land e_1 = e_2 \rightarrow t_1 = t_2$. In other words, there is at most one tuple in $Pop(f)$ for every combination of instances of $A, D$, and $E$.
 
+## Week 6
+
+### Occurrence Frequency Constraints
+
+![Diagram 15a](diagrams/diagram_15a.pdf)\
+
 # Extension
 
 ## Week 2
