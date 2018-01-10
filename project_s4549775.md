@@ -419,6 +419,14 @@ We denote the occurrence frequency constraint is $frequency(\sigma, m, n)$, wher
 
 Occurrence frequency constraints work very similarly to uniqueness constraints, in that their semantics are defined by the $\xi$ operator, which produces derived fact types.
 
+Take the uniqueness constraint we looked at earlier, with uniqueness constraint $unique(\{p_1\})$:
+
+![Diagram 10c](diagrams/diagram_10c.pdf)\
+
+We can represent the same constraint using occurrence frequency constraints with two equivalent representations, as discussed before. One using $frequency(\{p_1\}, 0, 1)$, and another using $frequency(\{p_1\}, 1, 1)$:
+
+![Diagram 13a](diagrams/diagram_13a.pdf)\ ![Diagram 13b](diagrams/diagram_13b.pdf)\
+
 ### Total Role Constraints
 
 ### Set Constraints
