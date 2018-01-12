@@ -693,6 +693,8 @@ This means that the combination of $A, D$, and $E$ if unique in $Pop(f)$ with re
 
 ### Occurrence Frequency Constraints
 
+Like uniqueness constraints, occurrence frequency constraints can span multiple fact types, as long as they can be joined on a type related entity type. Let us look at an example:
+
 ![Diagram 15a](diagrams/diagram_15a.pdf)\
 
 $\begin{aligned}
@@ -707,7 +709,11 @@ $\begin{aligned}
 	frequency(\sigma, 2, 2) && \sigma &= \{p_1, p_4\}\\
 \end{aligned}$
 
+$Base(p_2) = B \sim B = Base(p_3)$, so we can join on entity type B. $\xi(\sigma)$ produces the following derived fact type:
+
 ![Diagram 15b](diagrams/diagram_15b.pdf)\
+
+This means that $Pop(f) = ø$ is a legal population, as well as $Pop(f) = \{(a_1, c_1, b_1), (a_1, c_1, b_2)\}$. Both $Pop(f) = \{(a_1, c_1, b_1)\}$, and $Pop(f) = \{(a_1, c_1, b_1), (a_1, c_1, b_2), (a_1, c_1, b_3)\}$ are illegal populations.
 
 # Extension
 
