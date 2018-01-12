@@ -445,6 +445,8 @@ $\begin{aligned}
 
 ### Total Role Constraints
 
+We already ensured that every product may at most have a single price, but for obvious reasons bol.com wants every product to also have at least one price. They do not want product in their database for which there is no associated price. Total role constraints can be used to enforce this requirement.
+
 ### Set Constraints
 
 # Evaluation
