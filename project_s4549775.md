@@ -695,6 +695,18 @@ This means that the combination of $A, D$, and $E$ if unique in $Pop(f)$ with re
 
 ![Diagram 15a](diagrams/diagram_15a.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF & \EE &= \{A, B, C\} & \FF &= \{\{p_1, p_2\}, \{p_3, p_4\}\} & \PP &= \{p_1, p_2, p_3, p_4\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= B & Base(p_3) &= B & Base(p_4) &= C\\
+\end{aligned}$
+
+$\begin{aligned}
+	frequency(\sigma, 2, 2) && \sigma &= \{p_1, p_4\}\\
+\end{aligned}$
+
 ![Diagram 15b](diagrams/diagram_15b.pdf)\
 
 # Extension
