@@ -83,6 +83,8 @@ $frequency(\sigma, n, m)$ $\sigma \subseteq \PP \land n, m \in \mathbb{Z}$
                           Occurrence frequency constraint
 $total(\tau)$             $\tau \subseteq \PP \land \tau \neq ø$
                           Total role constraint
+$unique(\tau)$            $\tau \subseteq \PP \land \tau \neq ø$
+                          Uniqueness constraint
 ------------------------- ------------------------------------------------
 : Integrity Constraints \label{th:constraints}
 
