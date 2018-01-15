@@ -451,6 +451,18 @@ A model enforcing that every product has exactly one price could look like this:
 
 ![Diagram 16a](diagrams/diagram_16a.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF \cup \LL & \EE &= \{Product, Price\} & \FF &= \{\{p_1, p_2\}\} & \LL &= \{Product\ ID\} & \PP &= \{p_1, p_2\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= Product & Base(p_2) &= Price\\
+\end{aligned}$
+
+$\begin{aligned}
+	\RR = \{total(\tau)\} && \tau &= \{p_1\}\\
+\end{aligned}$
+
 This is identical to the following representation:
 
 ![Diagram 16b](diagrams/diagram_16b.pdf)\
