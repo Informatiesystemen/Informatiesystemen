@@ -30,28 +30,29 @@ In this document we want to apply, evaluate, and try to improve the information 
 
 ## Theory overview
 
---------- -------------------------------------------------------
-$\PP$     predicators / roles
-$\OO$     object types
-$\Omega$  instances of $\OO$
-$\CC$     schema types
-          $\CC \subseteq \OO$
-$\EE$     entity types
-          $\mathcal{E} \subseteq \OO$
-$\FF$     fact types
-          $\FF \subseteq \OO$
-          $\FF$ is a partition of $\PP$
-$\GG$     group types / power types
-          $\GG \in \OO$
-$\LL$     label types
-          $\LL \subseteq \OO$
-$\SS$     sequence types
-          $\SS \in \OO$
-$\II$     information structure
-          $\II = \{\CC, \EE, \FF, \GG, \LL, …\}$
-$POP_\II$ all possible populations of information structure $\II$
-$\RR$     constraints on a population
---------- -------------------------------------------------------
+--------------------- -------------------------------------------------------
+$\PP$                 predicators / roles
+$\OO$                 object types
+$\Omega$              instances of $\OO$
+$\CC$                 schema types
+                      $\CC \subseteq \OO$
+$\EE$                 entity types
+                      $\mathcal{E} \subseteq \OO$
+$\FF$                 fact types
+                      $\FF \subseteq \OO$
+                      $\FF$ is a partition of $\PP$
+$\GG$                 group types / power types
+                      $\GG \in \OO$
+$\LL$                 label types
+                      $\LL \subseteq \OO$
+$\SS$                 sequence types
+                      $\SS \in \OO$
+$\II$                 information structure
+                      $\II = \{\CC, \EE, \FF, \GG, \LL, …\}$
+$POP_\II$             all possible populations of information structure $\II$
+$\RR$                 constraints on a population
+$\Sigma = (\II, \RR)$ schema
+--------------------- -------------------------------------------------------
 : Sets \label{th:sets}
 
 --------------------------------------------- ---------------------------------------------------------------
