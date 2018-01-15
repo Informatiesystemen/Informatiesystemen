@@ -698,6 +698,10 @@ $\begin{aligned}
 	\OO &= \EE \cup \FF & \EE &= \{A, B, C\} & \FF &= \{f, g\} & f &= \{p_1, p_2\} & g &= \{p_3, p_4\} & unique(\tau) && \tau &= \{p_1, p_4\}\\
 \end{aligned}$
 
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= B & Base(p_3) &= B & Base(p_4) &= C\\
+\end{aligned}$
+
 $Base(p_2)$ must be type related to $Base(p_3)$, so we can join on $B$. $Base(p_2) = B \sim B = Base(p_3)$, so this condition is given. $\xi(\{p_1, p_4\})$ produces the following derived fact type:
 
 ![Diagram 11b](diagrams/diagram_11b.pdf)\
