@@ -717,6 +717,11 @@ $\begin{aligned}
 \end{aligned}$
 
 $\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= B & Base(p_3) &= B & Base(p_4) &= E\\
+	Base(p_5) &= C & Base(p_6) &= C & Base(p_7) &= D\\
+\end{aligned}$
+
+$\begin{aligned}
 	unique(\tau) && \tau &= \{p_1, p_4, p_7\}\\
 \end{aligned}$
 
