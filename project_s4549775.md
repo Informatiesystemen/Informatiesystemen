@@ -115,22 +115,22 @@ With this information we can already draw our first diagram.
 
 $\OO = \EE \cup \FF \cup \LL$
 
-$\EE$ = {price, category, product, shopping cart, customer, color, name}
+$\EE$ = {Price, Category, Product, Shopping Cart, Customer, Color, Name}
 
 $\FF = \{\{p_1, p_2\}, \{p_3, p_4\}, \{p_5, p_6\}, \{p_7, p_8\}, \{p_9, p_{10}\}, \{p_{11}, p_{12}\}, \{p_{13}, p_{14}\}\}$
 
-$\LL$ = {product ID, customer ID, shopping cart ID, category ID}
+$\LL$ = {Product ID, Customer ID, Shopping Cart ID, Category ID}
 
 $\PP = \{p_1, p_2, â€¦, p_{14}\}$
 
 $\begin{aligned}
-	Base(p_1) &= product & Base(p_2) &= name\\
-	Base(p_3) &= product & Base(p_4) &= price\\
-	Base(p_5) &= color & Base(p_6) &= product\\
-	Base(p_7) &= product & Base(p_8) &= shopping\ cart\\
-	Base(p_9) &= shopping\ cart & Base(p_{10}) &= customer\\
-	Base(p_{11}) &= name & Base(p_{12}) &= customer\\
-	Base(p_{13}) &= category & Base(p_{14}) &= product\\
+	Base(p_1) &= Product & Base(p_2) &= Name\\
+	Base(p_3) &= Product & Base(p_4) &= Price\\
+	Base(p_5) &= Color & Base(p_6) &= Product\\
+	Base(p_7) &= Product & Base(p_8) &= Shopping\ Cart\\
+	Base(p_9) &= Shopping\ Cart & Base(p_{10}) &= Customer\\
+	Base(p_{11}) &= Name & Base(p_{12}) &= Customer\\
+	Base(p_{13}) &= Category & Base(p_{14}) &= Product\\
 \end{aligned}$
 
 ## Week 2
@@ -149,27 +149,27 @@ Which implicitly contains the fact type $\epsilon_{Product Group}$, or $\epsilon
 
 $\OO = \EE \cup \FF \cup \GG \cup \LL$
 
-$\EE$ = {product}
+$\EE$ = {Product}
 
 $\FF = \{\epsilon_{PG}\}, \epsilon_{PG} = \{\epsilon_{PG}^e, \epsilon_{PG}^p\}$
 
-$\GG$ = {product group}
+$\GG$ = {Product Group}
 
-$\LL$ = {product ID}
+$\LL$ = {Product ID}
 
 $\PP = \{\epsilon_{PG}^e, \epsilon_{PG}^p\}$
 
 $\begin{aligned}
-	Base(\epsilon_{PG}^e) &= product & Base(\epsilon_{PG}^p) &= product\ group\\
+	Base(\epsilon_{PG}^e) &= Product & Base(\epsilon_{PG}^p) &= Product\ Group\\
 \end{aligned}$
 
-$Elt(product\ group) = product$
+$Elt(Product\ Group) = Product$
 
 We can populate the model with an example population. The craftsman pack consists of a hammer, and nails.
 
-$Pop(product)$ = {hammer, nails}
+$Pop(Product)$ = {hammer, nails}
 
-$Pop(product\ group)$ = {craftsman pack}
+$Pop(Product\ Group)$ = {craftsman pack}
 
 $Pop(\epsilon_{PG}) = \{t_1, t_2\}$
 
@@ -190,28 +190,28 @@ In addition to the implicit fact type $\epsilon_{PS}$, there is also an implicit
 
 $\OO = \EE \cup \FF \cup \GG \cup \LL$
 
-$\EE$ = {product}
+$\EE$ = {Product}
 
 $\FF = \{\epsilon_{PS}, @_{PS}\}, \epsilon_{PS} = \{\epsilon_{PS}^s, \epsilon_{PS}^e\}, @_{PS} = \{@_{PS}^s, @_{PS}^i\}$
 
-$\GG$ = {product sequence}
+$\GG$ = {Product Sequence}
 
-$\LL$ = {product ID, I}
+$\LL$ = {Product ID, I}
 
 $\PP = \{\epsilon_{PS}^s, \epsilon_{PS}^e, @_{PS}^s, @_{PS}^i\}$
 
 $\begin{aligned}
-	Base(\epsilon_{PS}^s) &= product\ sequence & Base(\epsilon_{PS}^e) &= product\\
-	Base(@_{PS}^s) &= product\ sequence & Base(@_{PS}^i) &= index\\
+	Base(\epsilon_{PS}^s) &= Product\ Sequence & Base(\epsilon_{PS}^e) &= Product\\
+	Base(@_{PS}^s) &= Product\ Sequence & Base(@_{PS}^i) &= I\\
 \end{aligned}$
 
-$Elt(product\ sequence) = product$
+$Elt(Product\ Sequence) = Product$
 
 We can again try to populate the model, to show its viability. We take the Matrix movies as an example, but we pretend the third one was never made.
 
-$Pop(product)$ = {the Matrix, the Matrix reloaded}
+$Pop(Product)$ = {the Matrix, the Matrix reloaded}
 
-$Pop(product\ sequence)$ = {Matrix franchise}
+$Pop(Product\ Sequence)$ = {Matrix franchise}
 
 $Pop(\epsilon_{PS}) = \{t_1, t_2\}$
 
@@ -328,11 +328,11 @@ Bol.com sells a lot of different products, which all have a price, a category, â
 
 $\OO = \EE \cup \FF \cup \LL$
 
-$\EE$ = {product, book, author}
+$\EE$ = {Product, Book, Author}
 
 $\FF$ = {{$p_1, p_2$}}
 
-$\LL$ = {product ID, author name}
+$\LL$ = {Product ID, Author Name}
 
 $\PP = \{p_1, p_2\}$
 
@@ -350,11 +350,11 @@ Bol.com may keep different records for employees, customers, and resellers, with
 
 $\OO = \EE \cup \FF \cup \LL$
 
-$\EE$ = {customer, employee, reseller, person}
+$\EE$ = {Customer, Employee, Reseller, Person}
 
 $\FF$ = {{$p_1, p_2$}}
 
-$\LL$ = {address, customer ID, employee ID, reseller ID}
+$\LL$ = {address, Customer ID, Employee ID, Reseller ID}
 
 $\PP = \{p_1, p_2\}$
 
@@ -391,11 +391,11 @@ We originally tried to represent the relation between products and their prices 
 ![Diagram 10a](diagrams/diagram_10a.pdf)\
 
 $\begin{aligned}
-	\OO &= \EE \cup \FF \cup \LL & \EE &= \{product\} & \FF &= \{f\} & f &= \{p_1, p_1\} & \LL &= \{product\ ID\} & \PP &= \{p_1, p_2\}\\
+	\OO &= \EE \cup \FF \cup \LL & \EE &= \{Product, Price\} & \FF &= \{f\} & f &= \{p_1, p_1\} & \LL &= \{Product\ ID\} & \PP &= \{p_1, p_2\}\\
 \end{aligned}$
 
 $\begin{aligned}
-	Base(p_1) &= product & Base(p_2) &= price\\
+	Base(p_1) &= Product & Base(p_2) &= Price\\
 \end{aligned}$
 
 There is no explicit uniqueness constraint on the fact type, so it implicitly looks like this:
@@ -435,11 +435,11 @@ Imagine bol.com wanted to offer family account sharing, where you can connect cl
 ![Diagram 14](diagrams/diagram_14.pdf)\
 
 $\begin{aligned}
-	\OO &= \EE \cup \FF \cup \LL & \EE &= \{account\} & \FF &= \{\{p_1, p_2\}\} & \LL &= \{account\ ID\} & \PP = \{p_1, p_2\}\\
+	\OO &= \EE \cup \FF \cup \LL & \EE &= \{Account\} & \FF &= \{\{p_1, p_2\}\} & \LL &= \{Account\ ID\} & \PP = \{p_1, p_2\}\\
 \end{aligned}$
 
 $\begin{aligned}
-	Base(p_1) &= account & Base(p_2) &= account\\
+	Base(p_1) &= Account & Base(p_2) &= Account\\
 \end{aligned}$
 
 $\begin{aligned}
