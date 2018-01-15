@@ -78,6 +78,12 @@ $\sim \subseteq \OO \times \OO$               type relatedness
 --------------------------------------------- ---------------------------------------------------------------
 : Functions and Relations \label{th:functions}
 
+------------------------- ------------------------------------------------
+$frequency(\sigma, n, m)$ $\sigma \subseteq \PP \land n, m \in \mathbb{Z}$
+                          Occurrence frequency constraint
+------------------------- ------------------------------------------------
+: Integrity Constraints \label{th:constraints}
+
 # Application
 
 The subject of our studies will be bol.com, which is the Netherlands leading e-commerce website. They sell an enormous amount of products in a wide range of categories, from books to pet supplies.
