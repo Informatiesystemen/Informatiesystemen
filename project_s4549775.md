@@ -467,6 +467,14 @@ This is identical to the following representation:
 
 ![Diagram 16b](diagrams/diagram_16b.pdf)\
 
+This constraint excludes the following population:
+
+$\begin{aligned}
+	Pop(Product) &= \{p_1\} & Pop(f) &= ø\\
+\end{aligned}$
+
+There is a $p_1 \in Pop(Product)$, so there must be a $(p_1, x) \in Pop(f)$ for which $x \in Pop(Price)$. We can formalize the constraint as $\exists a \in Pop(A) \land \exists f = \{p_1, p_2\}, Base(p_1) = A, Base(p_2) = B \land total(p_1) \in \RR \rightarrow \exists b \in Pop(B), (a, b) \in Pop(f)$.
+
 ### Set Constraints
 
 # Evaluation
