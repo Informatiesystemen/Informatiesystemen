@@ -420,6 +420,8 @@ To prevent multiple prices per product, we need $u$ or $v$ to be unique in $f$, 
 
 This means that for every instance of product, there is at most one tuple in $f$, or formally $\forall t_1 = (u_1, v_1), t_2 = (u_2, v_2): u_1 = u_2 \rightarrow t_1 = t_2$. That means that if we already have a tuple $(product_1, price_1)$, we cannot add an additional tuple with $product_1$, so we can only assign one price per product.
 
+A formal specification of when a population $Pop$ satisfies the uniqueness constraint $\tau$ looks as follows: $Pop \models unique(\tau) \leftrightarrow \tau$ is identifier of $\xi(\tau)$. This means that every $\tau \in$ $Pop(\xi(\tau))$ can be uniquely identified by instances of predicators in $\tau$.
+
 ## Week 6
 
 In week 5 we already talked about integrity constraints, and uniqueness constraints specifically. This week we will look at some other specific Integrity Constraints, what their semantics are, and how they are used.
