@@ -81,6 +81,8 @@ $\sim \subseteq \OO \times \OO$               type relatedness
 ------------------------- ------------------------------------------------
 $frequency(\sigma, n, m)$ $\sigma \subseteq \PP \land n, m \in \mathbb{Z}$
                           Occurrence frequency constraint
+$total(\tau)$             $\tau \subseteq \PP \land \tau \neq ø$
+                          Total role constraint
 ------------------------- ------------------------------------------------
 : Integrity Constraints \label{th:constraints}
 
