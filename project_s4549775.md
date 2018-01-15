@@ -16,6 +16,7 @@ header-includes:
 \newcommand{\LL}{\mathcal{L}}
 \newcommand{\OO}{\mathcal{O}}
 \newcommand{\PP}{\mathcal{P}}
+\newcommand{\RR}{\mathcal{R}}
 \renewcommand{\SS}{\mathcal{S}}
 
 \newcommand{\gen}[2]{#1\ Gen\ #2}
@@ -49,6 +50,7 @@ $\SS$     sequence types
 $\II$     information structure
           $\II = \{\CC, \EE, \FF, \GG, \LL, …\}$
 $POP_\II$ all possible populations of information structure $\II$
+$\RR$     constraints on a population
 --------- -------------------------------------------------------
 : Sets \label{th:sets}
 
