@@ -490,6 +490,8 @@ $\begin{aligned}
 
 There is a $p_1 \in Pop(Product)$, so there must be a $(p_1, x) \in Pop(f)$ for which $x \in Pop(Price)$. We can formalize the constraint as $\exists a \in Pop(A) \land \exists f = \{p_1, p_2\}, Base(p_1) = A, Base(p_2) = B \land total(p_1) \in \RR \rightarrow \exists b \in Pop(B), (a, b) \in Pop(f)$.
 
+## Week 8
+
 ### Set Constraints
 
 # Evaluation
@@ -768,6 +770,8 @@ $Base(p_2) = B \sim B = Base(p_3)$, so we can join on entity type B. $\xi(\sigma
 ![Diagram 15b](diagrams/diagram_15b.pdf)\
 
 This means that $Pop(f) = ø$ is a legal population, as well as $Pop(f) = \{(a_1, c_1, b_1), (a_1, c_1, b_2)\}$. Both $Pop(f) = \{(a_1, c_1, b_1)\}$, and $Pop(f) = \{(a_1, c_1, b_1), (a_1, c_1, b_2), (a_1, c_1, b_3)\}$ are illegal populations.
+
+## Week 8
 
 # Extension
 
