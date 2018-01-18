@@ -773,6 +773,18 @@ This means that $Pop(f) = ø$ is a legal population, as well as $Pop(f) = \{(a_1
 
 ![Diagram 17a](diagrams/diagram_17a.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF & \EE &= \{A, B, C\} & \FF &= \{f, g\} & f &= \{p_1, p_2\} & g &= \{p_3, p_4\} & \PP &= \{p_1, p_2, p_3, p_4\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= B & Base(p_3) &= f & Base(p_4) &= C\\
+\end{aligned}$
+
+$\begin{aligned}
+	\RR &= \{total(\tau)\} & \tau &= \{p_4\}\\
+\end{aligned}$
+
 ![Diagram 17b](diagrams/diagram_17b.pdf)\
 
 ## Week 8
