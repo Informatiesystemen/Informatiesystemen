@@ -771,6 +771,10 @@ $Base(p_2) = B \sim B = Base(p_3)$, so we can join on entity type B. $\xi(\sigma
 
 This means that $Pop(f) = ø$ is a legal population, as well as $Pop(f) = \{(a_1, c_1, b_1), (a_1, c_1, b_2)\}$. Both $Pop(f) = \{(a_1, c_1, b_1)\}$, and $Pop(f) = \{(a_1, c_1, b_1), (a_1, c_1, b_2), (a_1, c_1, b_3)\}$ are illegal populations.
 
+![Diagram 17a](diagrams/diagram_17a.pdf)\
+
+![Diagram 17b](diagrams/diagram_17b.pdf)\
+
 ## Week 8
 
 # Extension
