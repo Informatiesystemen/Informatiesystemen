@@ -811,6 +811,16 @@ $\begin{aligned}
 	Pop(A) &= ø & Pop(B) &= ø & Pop(C) &= \{c_1\} & Pop(f) &= ø\\
 \end{aligned}$
 
+Here are some examples of legal populations:
+
+* $\begin{aligned}
+  	Pop(A) &= ø & Pop(B) &= ø & Pop(C) &= ø & Pop(f) &= ø\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(C) &= \{c_1\} & Pop(f) &= \{\{(p_1, a_1), (p_2, b_1), (p_{3, 4}, c_1)\}\}\\
+  \end{aligned}$
+
 ## Week 8
 
 # Extension
