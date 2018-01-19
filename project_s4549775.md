@@ -793,6 +793,18 @@ Which population is excluded by this constraint? We can use the $\xi$ operator, 
 
 ![Diagram 17b](diagrams/diagram_17b.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF & \EE &= \{A, B, C\} & \FF &= \{\{p_1, p_{3, 4}, p_2\}\} & \PP &= \{p_1, p_2, p_{3, 4}\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= B & Base(p_{3, 4}) &= C\\
+\end{aligned}$
+
+$\begin{aligned}
+	\RR &= \{total(\tau)\} & \tau &= \{p_{3, 4}\}\\
+\end{aligned}$
+
 ## Week 8
 
 # Extension
