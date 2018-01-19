@@ -789,7 +789,7 @@ $\begin{aligned}
 	\RR &= \{total(\tau)\} & \tau &= \{p_4\}\\
 \end{aligned}$
 
-Which population is excluded by this constraint? We can use the $\xi$ operator, which we already know from uniqueness constraints. $\xi(\tau)$ produces the following derived fact type:
+Which population is excluded by this constraint? To get to the semantics of this constraint, we need to flatten the objectification. We can use the $\xi$ operator, which we already know from uniqueness constraints. $\xi(\tau)$ produces the following derived fact type:
 
 ![Diagram 17b](diagrams/diagram_17b.pdf)\
 
