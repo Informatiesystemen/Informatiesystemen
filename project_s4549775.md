@@ -498,6 +498,8 @@ In week 6 we introduced family account sharing. For convenience, the diagram of 
 
 ![Diagram 14](diagrams/diagram_14.pdf)\
 
+![Diagram 18](diagrams/diagram_18.pdf)\
+
 # Evaluation
 
 ## Week 1
