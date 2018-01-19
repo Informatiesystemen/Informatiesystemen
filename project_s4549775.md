@@ -475,7 +475,7 @@ $\begin{aligned}
 \end{aligned}$
 
 $\begin{aligned}
-	\RR = \{total(\tau)\} && \tau &= \{p_1\}\\
+	\RR &= \{total(\tau), unique(\tau)\} & \tau &= \{p_1\}\\
 \end{aligned}$
 
 This is identical to the following representation:
