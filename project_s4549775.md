@@ -794,7 +794,7 @@ Which population is excluded by this constraint? To get to the semantics of this
 ![Diagram 17b](diagrams/diagram_17b.pdf)\
 
 $\begin{aligned}
-	\OO &= \EE \cup \FF & \EE &= \{A, B, C\} & \FF &= \{\{p_1, p_{3, 4}, p_2\}\} & \PP &= \{p_1, p_2, p_{3, 4}\}\\
+	\OO &= \EE \cup \FF & \EE &= \{A, B, C\} & \FF &= \{f\} & f &= \{p_1, p_{3, 4}, p_2\} & \PP &= \{p_1, p_2, p_{3, 4}\}\\
 \end{aligned}$
 
 $\begin{aligned}
@@ -803,6 +803,12 @@ $\begin{aligned}
 
 $\begin{aligned}
 	\RR &= \{total(\tau)\} & \tau &= \{p_{3, 4}\}\\
+\end{aligned}$
+
+The semantics of total role constraints over a single fact type are already known. An example of a population which is excluded by the constraint is the following:
+
+$\begin{aligned}
+	Pop(A) &= ø & Pop(B) &= ø & Pop(C) &= \{c_1\} & Pop(f) &= ø\\
 \end{aligned}$
 
 ## Week 8
