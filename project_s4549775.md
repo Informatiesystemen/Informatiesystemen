@@ -771,6 +771,10 @@ $Base(p_2) = B \sim B = Base(p_3)$, so we can join on entity type B. $\xi(\sigma
 
 This means that $Pop(f) = ø$ is a legal population, as well as $Pop(f) = \{(a_1, c_1, b_1), (a_1, c_1, b_2)\}$. Both $Pop(f) = \{(a_1, c_1, b_1)\}$, and $Pop(f) = \{(a_1, c_1, b_1), (a_1, c_1, b_2), (a_1, c_1, b_3)\}$ are illegal populations.
 
+### Total Role Constraints
+
+Of course we sometimes need more complicated total role constraints, where $\tau$ is not limited to predicates from a single fact type. Let us look at an example where the total role contraint is bound to an objectification:
+
 ![Diagram 17a](diagrams/diagram_17a.pdf)\
 
 $\begin{aligned}
@@ -784,6 +788,8 @@ $\begin{aligned}
 $\begin{aligned}
 	\RR &= \{total(\tau)\} & \tau &= \{p_4\}\\
 \end{aligned}$
+
+Which population is excluded by this constraint? We can use the $\xi$ operator, which we already know from uniqueness constraints. $\xi(\tau)$ produces the following derived fact type:
 
 ![Diagram 17b](diagrams/diagram_17b.pdf)\
 
