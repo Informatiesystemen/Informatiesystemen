@@ -494,6 +494,10 @@ There is a $p_1 \in Pop(Product)$, so there must be a $(p_1, x) \in Pop(f)$ for 
 
 ### Set Constraints
 
+In week 6 we introduced family account sharing. For convenience, the diagram of the model is repeated here:
+
+![Diagram 14](diagrams/diagram_14.pdf)\
+
 # Evaluation
 
 ## Week 1
