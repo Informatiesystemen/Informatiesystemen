@@ -500,6 +500,8 @@ In week 6 we introduced family account sharing. For convenience, the diagram of 
 
 This limits the number of accounts that you share can your account with to 5 via the constraint $frequency(\sigma, 0, 5)$ where $\sigma = \{p_1\}$.
 
+Assume bol.com decided to introduce a friend system, where you can add other accounts as your friends, and limit family account sharing to the friends of an account. This restriction can be enforced using set constraints, specifically a subset constraint. We disregard the frequency occurrence constraint for the moment, to keep things simple, and just focus on enforcing that accounts may only be shared with friends.
+
 ![Diagram 18](diagrams/diagram_18.pdf)\
 
 # Evaluation
