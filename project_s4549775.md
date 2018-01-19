@@ -502,6 +502,8 @@ This limits the number of accounts that you share can your account with to 5 via
 
 Assume bol.com decided to introduce a friend system, where you can add other accounts as your friends, and limit family account sharing to the friends of an account. This restriction can be enforced using set constraints, specifically a subset constraint. We disregard the frequency occurrence constraint for the moment, to keep things simple, and just focus on enforcing that accounts may only be shared with friends.
 
+Subset constraints can express that the projected population of some $\pi_\sigma(\xi(\sigma))$ must be a subset of some other projected population $\pi_\tau(\xi(\tau))$, where there exists a matching $\phi$ such that $\phi(x) \sim x$. Often $\phi$ is apparent from the context, and therefore omitted.
+
 ![Diagram 18](diagrams/diagram_18.pdf)\
 
 # Evaluation
