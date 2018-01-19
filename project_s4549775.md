@@ -455,7 +455,7 @@ $\begin{aligned}
 \end{aligned}$
 
 $\begin{aligned}
-	frequency(\sigma, 0, 5) && \sigma &= \{p_1\}\\
+	\RR &= \{frequency(\sigma, 0, 5)\} & \sigma &= \{p_1\}\\
 \end{aligned}$
 
 ### Total Role Constraints
