@@ -565,6 +565,10 @@ The following populations are allowed:
   	Pop(shared\ with) &= \{\{(p_1, a_1), (p_2, a_2)\}\}\\
   \end{aligned}$
 
+If you look at the second example of an excluded population, it is a bit strange, that $a_1$ must not share his account with $a_2$, even though $a_2$ is friends with $a_1$. $a_1$ would need to be a friend of $a_2$, to share his account with him. You might argue, that that's what we just said, but according to the current schema, this does not hold.
+
+Let's assume that bol.com uses the generally accepted definition of friendship, which means that it is always mutual: $a$ is friends with $b \leftrightarrow b$ is friends with $a$. How can this be formalized in the schema? We can use another form of set constraints: the equality constraint.
+
 # Evaluation
 
 ## Week 1
