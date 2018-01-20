@@ -973,6 +973,10 @@ Here are some examples of legal populations:
 
 ## Week 8
 
+### Set constraints
+
+The $\xi$ operator is already known, and we have shown previously that it can be applied to complicated situations with objectification and predicator sets spanning multiple fact types, etc. Since we use this same operator for the set constraints, they can also be applied to complicated situations. Therefore we don't repeat that here, and focus on the completeness of the set constraints.
+
 # Extension
 
 ## Week 2
