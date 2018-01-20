@@ -517,6 +517,22 @@ Subset constraints can express that the projected population of some $\pi_\sigma
 
 ![Diagram 18](diagrams/diagram_18.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF \cup \LL & \EE &= \{Account\} & \FF &= \{friends\ with, shared\ with\} & friends\ with &= \{p_3, p_4\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	shared\ with &= \{p_1, p_2\} & \LL &= \{Account\ ID\} & \PP &= \{p_1, p_2, p_3, p_4\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= Account & Base(p_2) &= Account & Base(p_3) &= Account & Base(p_4) &= Account\\
+\end{aligned}$
+
+$\begin{aligned}
+	\RR &= \{subset_\phi(\sigma, \tau)\} & \sigma &= \{p_1, p_2\} & \tau &= \{p_3, p_4\}, \phi &= \{(p_1, p_3), (p_2, p_4)\}\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
