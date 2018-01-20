@@ -582,6 +582,8 @@ $\begin{aligned}
 
 In this case we do not need to specify $\phi$ explicitly, because only one of the two possible matchings makes sense from a semantic point of view. The matching $\{(p_3, p_3), (p_4, p_4)\}$ would mean $\pi_\tau(\xi(\tau)) =_\phi \pi_\tau(\xi(\tau))$, which is a tautology, and therefore does not add to the semantics, so we can infer $\phi = \{(p_3, p_4), (p_4, p_3)\}$.
 
+Now imagine that bol.com adds a feature, that allows you to block other accounts. This forbids the account you blocked from interacting with you on bol.com, by sending you messages, offering products to you, and similar. It does not make sense to block an account you are friends with, so the two groups of accounts you are friends with, and that you blocked should be distinct. We can use another set constraint to express this, namely the exclusion constraint.
+
 # Evaluation
 
 ## Week 1
