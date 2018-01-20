@@ -101,6 +101,8 @@ $unique(\tau)$                 Uniqueness constraint
 
 The subject of our studies will be bol.com, which is the Netherlands leading e-commerce website. They sell an enormous amount of products in a wide range of categories, from books to pet supplies.
 
+To keep track of all of its products, customers, categories, …, and their properties, bol.com stores them in a database system. To do this they need a database schema, which maps the reality of their business domain to objects, relations, and constraints, which tell the database system which data is supposed to be stored, allows it to enforce restrictions on their populations, and can be used to improve efficiency if queries on the database.
+
 ## Week 1
 
 We can begin by identifying members of the sets (see \ref{th:sets}) on bol.com.
