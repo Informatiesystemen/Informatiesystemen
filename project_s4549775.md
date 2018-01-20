@@ -551,6 +551,20 @@ The following populations are excluded by the constraint:
   	Pop(shared\ with) &= \{\{(p_1, a_1), (p_2, a_2)\}\}\\
   \end{aligned}$
 
+The following populations are allowed:
+
+* $\begin{aligned}
+  	Pop(Account) &= \{a_1, a_2\} & Pop(friends\ with) &= ø & Pop(shared\ with) &= ø\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(Account) &= \{a_1, a_2\} & Pop(friends\ with) &= \{\{(p_3, a_1), (p_4, a_2)\}\}\\
+  \end{aligned}$
+
+  $\begin{aligned}
+  	Pop(shared\ with) &= \{\{(p_1, a_1), (p_2, a_2)\}\}\\
+  \end{aligned}$
+
 # Evaluation
 
 ## Week 1
