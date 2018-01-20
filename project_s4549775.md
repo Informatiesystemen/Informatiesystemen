@@ -79,12 +79,12 @@ $\sim \subseteq \OO \times \OO$               type relatedness
 : Functions and Relations \label{th:functions}
 
 ------------------------- ------------------------------------------------
-$frequency(\sigma, n, m)$ $\sigma \subseteq \PP \land n, m \in \mathbb{Z}$
-                          Occurrence frequency constraint
-$total(\tau)$             $\tau \subseteq \PP \land \tau \neq ø$
-                          Total role constraint
-$unique(\tau)$            $\tau \subseteq \PP \land \tau \neq ø$
-                          Uniqueness constraint
+$frequency(\sigma, n, m)$ Occurrence frequency constraint
+                          $\sigma \subseteq \PP \land n, m \in \mathbb{Z}$
+$total(\tau)$             Total role constraint
+                          $\tau \subseteq \PP \land \tau \neq ø$
+$unique(\tau)$            Uniqueness constraint
+                          $\tau \subseteq \PP \land \tau \neq ø$
 ------------------------- ------------------------------------------------
 : Integrity Constraints \label{th:constraints}
 
