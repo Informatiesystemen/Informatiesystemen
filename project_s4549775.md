@@ -78,14 +78,23 @@ $\sim \subseteq \OO \times \OO$               type relatedness
 --------------------------------------------- ---------------------------------------------------------------
 : Functions and Relations \label{th:functions}
 
-------------------------- ------------------------------------------------
-$frequency(\sigma, n, m)$ Occurrence frequency constraint
-                          $\sigma \subseteq \PP \land n, m \in \mathbb{Z}$
-$total(\tau)$             Total role constraint
-                          $\tau \subseteq \PP \land \tau \neq ø$
-$unique(\tau)$            Uniqueness constraint
-                          $\tau \subseteq \PP \land \tau \neq ø$
-------------------------- ------------------------------------------------
+------------------------------ -------------------------------------------------------------------------------------
+$equal_\phi(\sigma, \tau)$     Equality constraint
+                               $\sigma \subseteq \PP \land \tau \subseteq \PP \land \sigma \neq ø \land \tau \neq ø$
+                               $\phi$ is a matching of $\sigma$ and $\tau$
+$exclusion_\phi(\sigma, \tau)$  Equality constraint
+                               $\sigma \subseteq \PP \land \tau \subseteq \PP \land \sigma \neq ø \land \tau \neq ø$
+                               $\phi$ is a matching of $\sigma$ and $\tau$
+$frequency(\sigma, n, m)$      Occurrence frequency constraint
+                               $\sigma \subseteq \PP \land n, m \in \mathbb{Z}$
+$subset_\phi(\sigma, \tau)$    Subset constraint
+                               $\sigma \subseteq \PP \land \tau \subseteq \PP \land \sigma \neq ø \land \tau \neq ø$
+                               $\phi$ is a matching of $\sigma$ and $\tau$
+$total(\tau)$                  Total role constraint
+                               $\tau \subseteq \PP \land \tau \neq ø$
+$unique(\tau)$                 Uniqueness constraint
+                               $\tau \subseteq \PP \land \tau \neq ø$
+------------------------------ -------------------------------------------------------------------------------------
 : Integrity Constraints \label{th:constraints}
 
 # Application
