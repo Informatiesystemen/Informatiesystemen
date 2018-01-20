@@ -630,6 +630,16 @@ $\begin{aligned}
 	Pop(blocked) &= \{\{(p_5, a_1), (p_6, a_2)\}\}\\
 \end{aligned}$
 
+Two allowed populations:
+
+* $\begin{aligned}
+  	Pop(Account) &= ø & Pop(friends\ with) &= ø & Pop(blocked) &= ø\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(Account) &= \{a_1, a_2\} & Pop(friends\ with) &= ø & Pop(blocked) &= \{\{(p_5, a_1), (p_6, a_2)\}\}\\
+  \end{aligned}$
+
 # Evaluation
 
 ## Week 1
