@@ -537,6 +537,20 @@ As you can see, this is an example of a situation, in which the matching $\phi$ 
 
 This constraints allows populations, for which $\pi_\sigma(\xi(\sigma)) \subseteq_\phi \pi_\tau(\xi(\tau))$. $\sigma$ and $\tau$ are limited to single fact types, so $\xi(\sigma) = \sigma, \xi(\tau) = \tau$, and they span their whole fact types, which means the projection does not do much, so $Val[\sigma](Pop)) \subseteq_\phi Val[\tau](Pop)$ needs to hold.
 
+The following populations are excluded by the constraint:
+
+* $\begin{aligned}
+  	Pop(Account) &= \{a_1, a_2\} & Pop(friends\ with) &= ø & Pop(shared\ with) &= \{\{(p_1, a_1), (p_2, a_2)\}\}\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(Account) &= \{a_1, a_2\} & Pop(friends\ with) &= \{\{(p_4, a_1), (p_3, a_2)\}\}\\
+  \end{aligned}$
+
+  $\begin{aligned}
+  	Pop(shared\ with) &= \{\{(p_1, a_1), (p_2, a_2)\}\}\\
+  \end{aligned}$
+
 # Evaluation
 
 ## Week 1
