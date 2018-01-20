@@ -575,6 +575,11 @@ We disregard everything not relevant to mutual friendship for now, or the diagra
 
 ![Diagram 19](diagrams/diagram_19.pdf)\
 
+The model is the same as the one above (though not everything is drawn in the diagram), with an additional constraint:
+$\begin{aligned}
+	\RR &= \{…, equal_\phi(\tau, \tau)\} & \tau &= \{p_1, p_2\}\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
