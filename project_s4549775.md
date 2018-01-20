@@ -580,6 +580,8 @@ $\begin{aligned}
 	\RR &= \{…, equal_\phi(\tau, \tau)\} & \tau &= \{p_1, p_2\}\\
 \end{aligned}$
 
+In this case we do not need to specify $\phi$ explicitly, because only one of the two possible matchings makes sense from a semantic point of view. The matching $\{(p_3, p_3), (p_4, p_4)\}$ would mean $\pi_\tau(\xi(\tau)) =_\phi \pi_\tau(\xi(\tau))$, which is a tautology, and therefore does not add to the semantics, so we can infer $\phi = \{(p_3, p_4), (p_4, p_3)\}$.
+
 # Evaluation
 
 ## Week 1
