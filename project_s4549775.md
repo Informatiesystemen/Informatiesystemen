@@ -600,6 +600,8 @@ While the following two populations are valid:
 
 Now imagine that bol.com adds a feature, that allows you to block other accounts. This forbids the account you blocked from interacting with you on bol.com, by sending you messages, offering products to you, and similar. It does not make sense to block an account you are friends with, so the two groups of accounts you are friends with, and that you blocked should be distinct. We can use another set constraint to express this, namely the exclusion constraint.
 
+Exclusion constraints can express the restriction that the projected populations of the derived fact types of two non-empty sets of predicators $\sigma, \tau$ must not intersect with regards to a matching $\phi$, such that $\phi(x) \sim x$. We can formalize this as $\pi_\sigma(\xi(\sigma)) \otimes_\phi \pi_\tau(\xi(\tau))$.
+
 ![Diagram 20](diagrams/diagram_20.pdf)\
 
 # Evaluation
