@@ -569,6 +569,8 @@ If you look at the second example of an excluded population, it is a bit strange
 
 Let's assume that bol.com uses the generally accepted definition of friendship, which means that it is always mutual: $a$ is friends with $b \leftrightarrow b$ is friends with $a$. How can this be formalized in the schema? We can use another form of set constraints: the equality constraint.
 
+Equality constraints allow expressing that the populations of the projections of the derived fact types of two non-empty sets of predicators $\sigma, \tau$ must be equal with regards to some matching $\phi$, such that $\phi(x) \sim \phi$, or formally: $\pi_\sigma(\xi(\sigma)) =_\phi \pi_\tau(\xi(\tau))$.
+
 We disregard everything not relevant to mutual friendship for now, or the diagram of the schema becomes very convoluted. A schema that guarantees mutual friendships could look like this:
 
 ![Diagram 19](diagrams/diagram_19.pdf)\
