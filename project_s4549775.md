@@ -604,6 +604,20 @@ Exclusion constraints can express the restriction that the projected populations
 
 ![Diagram 20](diagrams/diagram_20.pdf)\
 
+This is the same model as above, extended with a fact type with two predicators, and an exclusion constraint:
+
+$\begin{aligned}
+	\FF &= \{…, blocked\} & blocked &= \{p_5, p_6\} & \PP = \{…, p_5, p_6\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_5) &= Account & Base(p_6) &= Account\\
+\end{aligned}$
+
+$\begin{aligned}
+	\RR &= \{…, exclusion_\phi(\sigma, \tau)\} & \sigma &= \{p_3, p_4\} & \tau &= \{p_5, p_6\}\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
