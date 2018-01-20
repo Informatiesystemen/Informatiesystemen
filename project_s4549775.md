@@ -535,6 +535,8 @@ $\begin{aligned}
 
 As you can see, this is an example of a situation, in which the matching $\phi$ is not apparent from the context, as $p_1 \sim p_2 \sim p_3 \sim p_4$, so we need to explicitly give one of the two possible matchings.
 
+This constraints allows populations, for which $\pi_\sigma(\xi(\sigma)) \subseteq_\phi \pi_\tau(\xi(\tau))$. $\sigma$ and $\tau$ are limited to single fact types, so $\xi(\sigma) = \sigma, \xi(\tau) = \tau$, and they span their whole fact types, which means the projection does not do much, so $Val[\sigma](Pop)) \subseteq_\phi Val[\tau](Pop)$ needs to hold.
+
 # Evaluation
 
 ## Week 1
