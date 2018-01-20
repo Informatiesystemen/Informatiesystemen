@@ -533,6 +533,8 @@ $\begin{aligned}
 	\RR &= \{subset_\phi(\sigma, \tau)\} & \sigma &= \{p_1, p_2\} & \tau &= \{p_3, p_4\}, \phi &= \{(p_1, p_3), (p_2, p_4)\}\\
 \end{aligned}$
 
+As you can see, this is an example of a situation, in which the matching $\phi$ is not apparent from the context, as $p_1 \sim p_2 \sim p_3 \sim p_4$, so we need to explicitly give one of the two possible matchings.
+
 # Evaluation
 
 ## Week 1
