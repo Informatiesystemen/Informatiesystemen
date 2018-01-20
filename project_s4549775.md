@@ -620,6 +620,16 @@ $\begin{aligned}
 
 This is another special case, in which we do not need to explicitly specify $\phi$, because $friends\ with$ is symmetric anyway (see above), so while we cannot infer $\phi$ from the context, as $p_3 \sim p_4 \sim p_5 \sim p_6$, it does not matter, as both possibilities have the same semantics.
 
+Example of an excluded population:
+
+$\begin{aligned}
+	Pop(Account) &= \{a_1, a_2\} & Pop(friends\ with) &= \{\{(p_3, a_1), (p_4, a_2)\}, \{(p_3, a_2), (p_4, a_1)\}\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Pop(blocked) &= \{\{(p_5, a_1), (p_6, a_2)\}\}\\
+\end{aligned}$
+
 # Evaluation
 
 ## Week 1
