@@ -618,6 +618,8 @@ $\begin{aligned}
 	\RR &= \{…, exclusion_\phi(\sigma, \tau)\} & \sigma &= \{p_3, p_4\} & \tau &= \{p_5, p_6\}\\
 \end{aligned}$
 
+This is another special case, in which we do not need to explicitly specify $\phi$, because $friends\ with$ is symmetric anyway (see above), so while we cannot infer $\phi$ from the context, as $p_3 \sim p_4 \sim p_5 \sim p_6$, it does not matter, as both possibilities have the same semantics.
+
 # Evaluation
 
 ## Week 1
