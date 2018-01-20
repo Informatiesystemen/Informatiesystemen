@@ -588,6 +588,16 @@ $\begin{aligned}
 	Pop(Account) &= \{a_1, a_2\} & Pop(friends\ with) &= \{\{(p_3, a_1), (p_4, a_2)\}\}\\
 \end{aligned}$
 
+While the following two populations are valid:
+
+* $\begin{aligned}
+  	Pop(Account) &= ø & Pop(friends\ with) &= ø\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(Account) &= \{a_1, a_2\} & Pop(friends\ with) &= \{\{(p_3, a_1), (p_4, a_2)\}, \{(p_3, a_2), (p_4, a_1)\}\}\\
+  \end{aligned}$
+
 Now imagine that bol.com adds a feature, that allows you to block other accounts. This forbids the account you blocked from interacting with you on bol.com, by sending you messages, offering products to you, and similar. It does not make sense to block an account you are friends with, so the two groups of accounts you are friends with, and that you blocked should be distinct. We can use another set constraint to express this, namely the exclusion constraint.
 
 # Evaluation
