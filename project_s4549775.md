@@ -600,6 +600,8 @@ While the following two populations are valid:
 
 Now imagine that bol.com adds a feature, that allows you to block other accounts. This forbids the account you blocked from interacting with you on bol.com, by sending you messages, offering products to you, and similar. It does not make sense to block an account you are friends with, so the two groups of accounts you are friends with, and that you blocked should be distinct. We can use another set constraint to express this, namely the exclusion constraint.
 
+![Diagram 20](diagrams/diagram_20.pdf)\
+
 # Evaluation
 
 ## Week 1
