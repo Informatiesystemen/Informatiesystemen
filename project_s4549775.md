@@ -1183,4 +1183,16 @@ $Pop \models subset_\phi^\subset(\sigma, \tau) \leftrightarrow Pop \models \pi_\
 
 ![Diagram 21a](diagrams/diagram_21a.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF & \EE &= \{A, B\} & \FF &= \{\{p_1, p_2\}, \{p_3, p_4\}\} & \PP &= \{p_1, p_2, p_3, p_4\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= B & Base(p_3) &= A & Base(p_4) &= B\\
+\end{aligned}$
+
+$\begin{aligned}
+	\RR &= \{subset_\phi^\subset(\sigma, \tau) & \sigma &= \{p_3, p_4\}, \tau &= \{p_1, p_2\}\\
+\end{aligned}$
+
 ![Diagram 21b](diagrams/diagram_21b.pdf)\
