@@ -977,7 +977,7 @@ Here are some examples of legal populations:
 
 The $\xi$ operator is already known, and we have shown previously that it can be applied to complicated situations with objectification and predicator sets spanning multiple fact types, etc. Since we use this same operator for the set constraints, they can also be applied to complicated situations. Therefore we don't repeat that here, and focus on the completeness of the set constraints.
 
-We have already shown that we can express equality, subsets, and exclusion, which use the operators $\subseteq, =$, and $\cap$. Obviously that also implicitly includes $\supseteq$, because $A \supseteq B \equiv B \subseteq A$. That does not, however cover the operatos $\subset, \supset, \cup$, and $\setminus$. We don't need to cover $\triangle$, as its semantics are defined in terms of $\setminus$ and $\cup$. $\subset$ and $\supset$ can also again use the same rule, reflecting to $\subseteq$, because $A \supset B \equiv B \subset A$.
+We have already shown that we can express equality, subsets, and exclusion, which use the operators $\subseteq, =$, and $\cap$. Obviously that also implicitly includes $\supseteq$, because $A \supseteq B \equiv B \subseteq A$. That does not, however cover the operatos $\subset, \supset, \cup$, and $\setminus$. We don't need to cover $\triangle$, as its semantics are defined in terms of $\setminus$ and $\cup$. $\subset$ and $\supset$ can also again use the same rule, reflecting $\subseteq$, because $A \supset B \equiv B \subset A$.
 
 # Extension
 
@@ -1192,9 +1192,9 @@ $\begin{aligned}
 \end{aligned}$
 
 $\begin{aligned}
-	\RR &= \{subset_\phi^\subset(\sigma, \tau) & \sigma &= \{p_3, p_4\}, \tau &= \{p_1, p_2\}\\
+	\RR &= \{subset_\phi^\subset(\sigma, \tau)\} & \sigma &= \{p_3, p_4\}, \tau &= \{p_1, p_2\}\\
 \end{aligned}$
 
 ![Diagram 21b](diagrams/diagram_21b.pdf)\
 
-In this case the constraint if replaced with a normal set constraint: $\RR &= \{subset_\phi(\sigma, \tau)\}$.
+In this case the constraint if replaced with a normal set constraint: $\RR = \{subset_\phi(\sigma, \tau)\}$.
