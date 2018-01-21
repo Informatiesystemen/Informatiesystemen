@@ -1266,3 +1266,5 @@ While it allows these populations:
 Next, I propose defining the difference constraint accordingly, with the semantics:
 
 $Pop \models difference_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\xi(\sigma)) \setminus_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
+
+![Diagram 23](diagrams/diagram_23.pdf)\
