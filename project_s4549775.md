@@ -1172,3 +1172,11 @@ related(X, Z) :-
 ```
 
 I propose to add a total ordering $<_\OO$ to all object types. It does not matter what the order is, it just needs to be transitive. We can represent $<_\OO$ as a sequence which contains all the object types.
+
+## Week 8
+
+### Set Constraints
+
+I propose introducing a proper subset constraint $subset_\phi^\subset(\sigma, \tau)$ with the semantics:
+
+$Pop \models subset_\phi^\subset(\sigma, \tau) \leftrightarrow Pop \models \pi_\sigma(\xi(\sigma)) \subset_\phi \pi_\tau(\xi(\tau))$
