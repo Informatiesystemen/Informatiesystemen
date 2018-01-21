@@ -1182,3 +1182,5 @@ I propose introducing a proper subset constraint $subset_\phi^\subset(\sigma, \t
 $Pop \models subset_\phi^\subset(\sigma, \tau) \leftrightarrow Pop \models \pi_\sigma(\xi(\sigma)) \subset_\phi \pi_\tau(\xi(\tau))$
 
 ![Diagram 21a](diagrams/diagram_21a.pdf)\
+
+![Diagram 21b](diagrams/diagram_21b.pdf)\
