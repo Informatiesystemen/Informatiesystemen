@@ -1262,3 +1262,7 @@ While it allows these populations:
   	&&&& Pop(g) &= \{\{(p_3, a_2), (p_4, b_1)\}\}\\
   	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}, \{(p_5, a_2), (p_6, b_1)\}\}\\
   \end{aligned}$
+
+Next, I propose defining the difference constraint accordingly, with the semantics:
+
+$Pop \models difference_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\xi(\sigma)) \setminus_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
