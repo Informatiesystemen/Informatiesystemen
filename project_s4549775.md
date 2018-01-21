@@ -1209,3 +1209,7 @@ $\begin{aligned}
 	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(\{p_1, p_2\}) &= \{\{(p_1, a_1), (p_2, b_1)\}\}\\
 	&&&& Pop(\{p_3, p_4\}) &= \{\{(p_3, a_1), (p_4, b_1)\}\}\\
 \end{aligned}$
+
+I further propose to add a union constraint with the following semantics:
+
+$Pop \models union_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\xi(\sigma)) \cup_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
