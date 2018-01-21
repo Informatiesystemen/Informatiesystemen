@@ -1197,4 +1197,4 @@ $\begin{aligned}
 
 ![Diagram 21b](diagrams/diagram_21b.pdf)\
 
-In this case the constraint if replaced with a normal set constraint: $\RR = \{subset_\phi(\sigma, \tau)\}$.
+In this case the constraint is replaced with a normal subset constraint: $\RR = \{subset_\phi(\sigma, \tau)\}$.
