@@ -346,15 +346,13 @@ Bol.com sells a lot of different products, which all have a price, a category, â
 
 ![Diagram 9](diagrams/diagram_9.pdf)\
 
-$\OO = \EE \cup \FF \cup \LL$
+$\begin{aligned}
+	\OO &= \EE \cup \FF \cup \LL & \EE &= \{Product, Book, Author\} & \FF &= \{\{p_1, p_2\}\}\\
+\end{aligned}$
 
-$\EE$ = {Product, Book, Author}
-
-$\FF$ = {{$p_1, p_2$}}
-
-$\LL$ = {Product ID, Author Name}
-
-$\PP = \{p_1, p_2\}$
+$\begin{aligned}
+	\LL &= \{Product\ ID, Author\ Name\} & \PP = \{p_1, p_2\}\\
+\end{aligned}$
 
 $\begin{aligned}
 	Base(p_1) &= Book & Base(p_2) &= Author\\
