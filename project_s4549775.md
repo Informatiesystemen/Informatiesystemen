@@ -1213,3 +1213,5 @@ $\begin{aligned}
 I further propose to add a union constraint with the following semantics:
 
 $Pop \models union_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\xi(\sigma)) \cup_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
+
+![Diagram 22](diagrams/diagram_22.pdf)\
