@@ -1216,7 +1216,7 @@ $Pop \models union_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\xi(\si
 ![Diagram 22](diagrams/diagram_22.pdf)\
 
 $\begin{aligned}
-	\OO &= \EE \cup \FF & \EE &= \{A, B\} & \FF &= \{\{p_1, p_2\}, \{p_3, p_4\}, \{p_5, p_6\}\} & \PP &= \{p_1, p_2, …, p_6\}\\
+	\OO &= \EE \cup \FF & \EE &= \{A, B\} & \FF &= \{f, g, h\} & f &= \{p_1, p_2\} & g &= \{p_3, p_4\} & h &= \{p_5, p_6\} & \PP &= \{p_1, p_2, …, p_6\}\\
 \end{aligned}$
 
 $\begin{aligned}
