@@ -1214,3 +1214,15 @@ I further propose to add a union constraint with the following semantics:
 $Pop \models union_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\xi(\sigma)) \cup_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
 
 ![Diagram 22](diagrams/diagram_22.pdf)\
+
+$\begin{aligned}
+	\OO &= \EE \cup \FF & \EE &= \{A, B\} & \FF &= \{\{p_1, p_2\}, \{p_3, p_4\}, \{p_5, p_6\}\} & \PP &= \{p_1, p_2, …, p_6\}\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= B & Base(p_3) &= A & Base(p_4) &= B & Base(p_5) &= A & Base(p_6) &= B\\
+\end{aligned}$
+
+$\begin{aligned}
+	\RR &= \{union_\phi(\sigma, \tau, \kappa)\} & \sigma &= \{p_1, p_2\} & \tau &= \{p_3, p_4\} & \kappa &= \{p_5, p_6\}\\
+\end{aligned}$
