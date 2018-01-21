@@ -1226,3 +1226,18 @@ $\begin{aligned}
 $\begin{aligned}
 	\RR &= \{union_\phi(\sigma, \tau, \kappa)\} & \sigma &= \{p_1, p_2\} & \tau &= \{p_3, p_4\} & \kappa &= \{p_5, p_6\}\\
 \end{aligned}$
+
+This constraint excludes all of the following populations:
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= ø & Pop(g) &= ø & Pop(h) &= \{\{(p_5, a_1), (p_6, a_2)\}\}\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= \{\{(p_1, a_1), (p_2, a_2)\}\} & Pop(g) &= ø & Pop(h) &= ø\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= ø & Pop(g) &= \{\{(p_3, a_1), (p_4, a_2)\}\} & Pop(h) &= ø\\
+  \end{aligned}$
+
