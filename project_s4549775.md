@@ -1181,6 +1181,8 @@ I propose introducing a proper subset constraint $subset_\phi^\subset(\sigma, \t
 
 $Pop \models subset_\phi^\subset(\sigma, \tau) \leftrightarrow Pop \models \pi_\sigma(\xi(\sigma)) \subset_\phi \pi_\tau(\xi(\tau))$
 
+We take an example to show that it is distinct from the already existing subset constraint:
+
 ![Diagram 21a](diagrams/diagram_21a.pdf)\
 
 $\begin{aligned}
@@ -1195,6 +1197,15 @@ $\begin{aligned}
 	\RR &= \{subset_\phi^\subset(\sigma, \tau)\} & \sigma &= \{p_3, p_4\}, \tau &= \{p_1, p_2\}\\
 \end{aligned}$
 
+This is as opposed to the model using a subset constraint:
+
 ![Diagram 21b](diagrams/diagram_21b.pdf)\
 
 In this case the constraint is replaced with a normal subset constraint: $\RR = \{subset_\phi(\sigma, \tau)\}$.
+
+The proper subset constraint, in contrast to the subset constraint, excludes the following population:
+
+$\begin{aligned}
+	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(\{p_1, p_2\}) &= \{\{(p_1, a_1), (p_2, b_1)\}\}\\
+	&&&& Pop(\{p_3, p_4\}) &= \{\{(p_3, a_1), (p_4, b_1)\}\}\\
+\end{aligned}$
