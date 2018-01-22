@@ -1346,3 +1346,15 @@ This constraint excludes the following populations:
   	&&&& Pop(g) &= \{\{(p_3, a_1), (p_4, b_1)\}\}\\
   	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}\}\\
   \end{aligned}$
+
+The following populations are allowed:
+
+* $\begin{aligned}
+  	Pop(A) &= ø & Pop(B) &= ø & Pop(f) &= ø & Pop(g) &= ø & Pop(h) &= ø\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= \{\{(p_1, a_1), (p_2, b_1)\}\}\\
+  	&&&& Pop(g) &= \{\{(p_3, a_1), (p_4, b_1)\}\}\\
+  	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}\}\\
+  \end{aligned}$
