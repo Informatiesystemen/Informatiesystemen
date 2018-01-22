@@ -1289,6 +1289,24 @@ $\begin{aligned}
 	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}\}
 \end{aligned}$
 
+Allowed populations include:
+
+* $\begin{aligned}
+  	Pop(A) &= ø & Pop(B) &= ø & Pop(f) &= ø & Pop(g) &= ø & Pop(h) &= ø\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= \{\{(p_1, a_1), (p_2, b_1)\}\}\\
+  	&&&& Pop(g) &= ø\\
+  	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}\}\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= \{\{(p_1, a_1), (p_2, b_1)\}\}\\
+  	&&&& Pop(g) &= \{\{(p_3, a_1), (p_4, b_1)\}\}\\
+  	&&&& Pop(h) &= ø\\
+  \end{aligned}$
+
 Lastly I propose adding the last missing set theory operator via an intersection constraint with the semantics:
 
 $Pop \models intersection_\phi(\sigma, \tau, \kappa) \leftrightarrow Pop \models \pi_\sigma(\xi(\sigma)) \cap_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
