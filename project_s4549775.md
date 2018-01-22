@@ -1358,3 +1358,5 @@ The following populations are allowed:
   	&&&& Pop(g) &= \{\{(p_3, a_1), (p_4, b_1)\}\}\\
   	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}\}\\
   \end{aligned}$
+
+Now we implemented all set theory operators as constraints that can be used in schemas. You could say that set constraints are complete now.
