@@ -1273,6 +1273,8 @@ Lastly I propose adding the last missing set theory operator via an intersection
 
 $Pop \models intersection_\phi(\sigma, \tau, \kappa) \leftrightarrow Pop \models \pi_\sigma(\xi(\sigma)) \cap_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
 
+The exclusion constraint we looked at earlier is a special form of this intersection constraint, where $\kappa = ø$: $intersection_\phi(\sigma, \tau, ø) \equiv exclusion_\phi(\sigma, \tau)$
+
 ![Diagram 24](diagrams/diagram_24.pdf)\
 
 $\begin{aligned}
