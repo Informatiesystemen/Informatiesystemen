@@ -1272,3 +1272,5 @@ $Pop \models difference_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\x
 Lastly I propose adding the last missing set theory operator via an intersection constraint with the semantics:
 
 $Pop \models intersection_\phi(\sigma, \tau, \kappa) \leftrightarrow Pop \models \pi_\sigma(\xi(\sigma)) \cap_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
+
+![Diagram 24](diagrams/diagram_24.pdf)\
