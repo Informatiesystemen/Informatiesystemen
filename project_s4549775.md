@@ -1326,3 +1326,23 @@ $\begin{aligned}
 $\begin{aligned}
 	\RR &= \{intersection_\phi(\sigma, \tau, \kappa)\} & \sigma &= f & \tau &= g & \kappa &= h\\
 \end{aligned}$
+
+This constraint excludes the following populations:
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= ø\\
+  	&&&& Pop(g) &= ø\\
+  	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}\}\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= \{\{(p_1, a_1), (p_2, b_1)\}\}\\
+  	&&&& Pop(g) &= ø\\
+  	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}\}\\
+  \end{aligned}$
+
+* $\begin{aligned}
+  	Pop(A) &= \{a_1\} & Pop(B) &= \{b_1\} & Pop(f) &= ø\\
+  	&&&& Pop(g) &= \{\{(p_3, a_1), (p_4, b_1)\}\}\\
+  	&&&& Pop(h) &= \{\{(p_5, a_1), (p_6, b_1)\}\}\\
+  \end{aligned}$
