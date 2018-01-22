@@ -1268,3 +1268,7 @@ Next, I propose defining the difference constraint accordingly, with the semanti
 $Pop \models difference_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\xi(\sigma)) \setminus_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
 
 ![Diagram 23](diagrams/diagram_23.pdf)\
+
+Lastly I propose adding the last missing set theory operator via an intersection constraint with the semantics:
+
+$Pop \models intersection_\phi(\sigma, \tau, \kappa) \leftrightarrow Pop \models \pi_\sigma(\xi(\sigma)) \cap_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
