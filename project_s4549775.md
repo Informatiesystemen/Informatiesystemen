@@ -1269,6 +1269,18 @@ $Pop \models difference_\phi(\sigma, \tau, \kappa) \leftrightarrow \pi_\sigma(\x
 
 ![Diagram 23](diagrams/diagram_23.pdf)\
 
+$\begin{aligned}
+	\OO &= \EE \cup \FF & \EE &= \{A, B\} & \FF &= \{f, g, h\} & f &= \{p_1, p_2\} & g &= \{p_3, p_4\} & h &= \{p_5, p_6\} & \PP = f \cup g \cup h\\
+\end{aligned}$
+
+$\begin{aligned}
+	Base(p_1) &= A & Base(p_2) &= B & Base(p_3) &= A & Base(p_4) &= B & Base(p_5) &= A & Base(p_6) &= B\\
+\end{aligned}$
+
+$\begin{aligned}
+	\RR &= \{difference_\phi(\sigma, \tau, \kappa)\} & \sigma &= f & \tau &= g & \kappa &= h\\
+\end{aligned}$
+
 Lastly I propose adding the last missing set theory operator via an intersection constraint with the semantics:
 
 $Pop \models intersection_\phi(\sigma, \tau, \kappa) \leftrightarrow Pop \models \pi_\sigma(\xi(\sigma)) \cap_\phi \pi_\tau(\xi(\tau)) =_\phi \pi_\kappa(\xi(\kappa))$
